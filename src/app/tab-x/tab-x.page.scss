@@ -77,15 +77,15 @@
 .report-detail-card-content {
   padding: 0 1em;
 
-  p, li {
-    font-size: 14px;
-    color: #333;
-    line-height: 1.7;
-  }
-
   p {
     margin: 1em 0 0 0;
   }
+}
+
+.report-detail-card-content p, li {
+  font-size: 14px ;
+  color: #333;
+  line-height: 1.7;
 }
 
 .report-detail-suggest {
