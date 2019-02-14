@@ -1,0 +1,103 @@
+.report-cover-container {
+  width: 100%;
+  height: 100%;
+  background: #30455d;
+  overflow: hidden;
+}
+
+.report-cover-title {
+  padding-top: 2em;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  margin: 0;
+  font-family: Roboto, serif;
+  animation: fadeIn 2s;
+}
+
+.report-cover-content {
+  position: relative;
+  height: 100%;
+  width: 75%;
+  margin: 3em auto;
+  padding-top: 2em;
+  background: url(../../assets/img/cover.png) no-repeat;
+  background-size: 100%;
+  animation: fadeInUp 1s;
+}
+
+.report-greetings, .report-date {
+  text-align: center;
+  margin: 0;
+}
+
+.report-greetings {
+  color: #30455d;
+}
+
+.report-date {
+  margin-top: .5em;
+  font-size: .8em;
+  color: #c6c6c6;
+}
+
+.report-cover-tag {
+  position: absolute;
+  right: 2%;
+  top: 18.5em;
+  width: 3.2em;
+  height: 5em;
+  background: url(../../assets/img/tag.png) no-repeat;
+  background-size: 100%;
+  transform-origin: top;
+  animation: shake 6s;
+  animation-iteration-count: infinite;
+}
+
+.report-cover-line {
+  position: absolute;
+  left: 1%;
+  top: 19em;
+  height: 2em;
+  z-index: 10;
+  width: 98%;
+  background: url(../../assets/img/line.png) no-repeat;
+  background-size: 100%;
+
+}
+
+@keyframes shake {
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    top: 10%;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

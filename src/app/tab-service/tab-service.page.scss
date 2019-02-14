@@ -1,0 +1,114 @@
+.service-program-description {
+  text-indent: 2em;
+  padding-bottom: 1em;
+}
+
+.report-service.report-detail-card-content {
+  padding: 0 2em !important;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.report-recommend.detail-title-name {
+  line-height: 2.6;
+}
+
+.service-view {
+  display: flex;
+  height: auto;
+  overflow: auto;
+  flex-direction: column;
+  padding: 1em 0;
+  background: #fff;
+  border-radius: 6px;
+  color: #30455d;
+  opacity: 1;
+
+  h3 {
+    font-size: 1.17em !important;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: .7em;
+  }
+
+  h4 {
+    font-size: 1em !important;
+    margin: 0;
+    font-weight: 100;
+  }
+
+  p {
+    white-space: normal;
+    text-indent: 0;
+    margin-right: 1em;
+  }
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5em;
+}
+
+.service-range, .service-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.package-service-items {
+  display: flex;
+  flex-direction: column;
+  color: #30455d;
+  font-size: 15px;
+
+  p {
+    margin: 0 !important;
+    font-size: 1em !important;
+    line-height: 1.5 !important;
+  }
+}
+
+.package-buy {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+  margin-bottom: 1em;
+  line-height: 1.9em;
+
+  p {
+    margin: 0;
+  }
+}
+
+.package-price {
+  color: #ef5350;
+  text-indent: 0;
+  font-size: 1.2em;
+}
+
+.buy-btn {
+  background: #30455d;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  height: 1.9em;
+  line-height: 1;
+  padding: 0 1.4em;
+  float: right;
+}
+
+.report-consultant {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  a {
+    background: #30455d;
+    color: #fff;
+    padding: .7em 0;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+}
+
+

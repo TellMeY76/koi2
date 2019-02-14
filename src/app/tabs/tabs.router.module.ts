@@ -8,16 +8,27 @@ const routes: Routes = [
         component: TabsPage,
         children: [
             {
-                path: 'tab1',
+                path: 'registration_scheme',
                 children: [
                     {
                         path: '',
-                        loadChildren: '../tab1/tab1.module#Tab1PageModule'
+                        loadChildren: '../tab-x/tab-x.module#TabXPageModule',
+                        data: {tabId: 0}
                     }
                 ]
             },
             {
-                path: 'tab2',
+                path: 'policy_match',
+                children: [
+                    {
+                        path: '',
+                        loadChildren: '../tab-x/tab-x.module#TabXPageModule',
+                        data: {tabId: 1}
+                    }
+                ]
+            },
+            {
+                path: 'financing_plan',
                 children: [
                     {
                         path: '',
@@ -27,31 +38,12 @@ const routes: Routes = [
                 ]
             },
             {
-                path: 'tab3',
+                path: 'fiscalTax_plan',
                 children: [
                     {
                         path: '',
                         loadChildren: '../tab-x/tab-x.module#TabXPageModule',
                         data: {tabId: 3}
-                    }
-                ]
-            },
-            {
-                path: 'tab4',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: '../tab-x/tab-x.module#TabXPageModule',
-                        data: {tabId: 4}
-                    }
-                ]
-            },
-            {
-                path: 'tab/:tabId',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: '../tab-x/tab-x.module#TabXPageModule'
                     }
                 ]
             },
@@ -66,14 +58,14 @@ const routes: Routes = [
             },
             {
                 path: '',
-                redirectTo: '/tabs/tab1',
+                redirectTo: '/tabs/registration_scheme',
                 pathMatch: 'full'
             }
         ]
     },
     {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/tabs/registration_scheme',
         pathMatch: 'full'
     }
 ];

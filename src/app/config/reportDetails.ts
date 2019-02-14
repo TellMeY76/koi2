@@ -17,7 +17,7 @@ export const REPO_DETAILS: RepoDetail[] = [
     }
   },
   {
-    name: '政策匹配及准备工作', icon: 'account_balance',
+    name: '政策匹配及准备工作', icon: 'filing',
     description: '易创，让政策申请更容易！',
     statusLabel: '基本信息',
     status: ['法人户籍：宁波市区', '人员结构：本科1人，硕士1人（计划引进）', '创业类型：科技型，生物科技', '所属园区：甬港现代创业园', '知识产权：计划申请发明专利2项'],
@@ -32,7 +32,7 @@ export const REPO_DETAILS: RepoDetail[] = [
     }
   },
   {
-    name: '融资计划及准备工作', icon: 'assignment',
+    name: '融资计划及准备工作', icon: 'list-box',
     description: '易创，让融资贷款更容易！',
     statusLabel: '基本信息',
     status: ['创业类型：科技型，生物科技', '是否引入外部投资者：是'],
@@ -46,7 +46,7 @@ export const REPO_DETAILS: RepoDetail[] = [
     }
   },
   {
-    name: '财税计划及年检服务', icon: 'assessment',
+    name: '财税计划及年检服务', icon: 'stats',
     description: '易创，让财税筹划更容易！',
     statusLabel: '基本信息',
     status: ['创业类型：科技型，生物科技', '注册地址：宁波 高新区 甬港现代铭楼', '税务资格：小规模纳税人', '税种行业：商业'],
