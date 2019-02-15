@@ -65,7 +65,7 @@ const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: '/tabs/tabs/registration_scheme',
+        redirectTo: '/index/tabs/registration_scheme',
         pathMatch: 'full'
     }
 ];

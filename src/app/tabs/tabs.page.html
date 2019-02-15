@@ -1,4 +1,4 @@
-<ion-tabs>
+<ion-tabs (swipeleft)="routerForward(tabs)" (swiperight)="routerBack(tabs)" #tabs>
     <ion-tab-bar slot="bottom">
         <ion-tab-button tab="registration_scheme">
             <ion-icon name="business"></ion-icon>

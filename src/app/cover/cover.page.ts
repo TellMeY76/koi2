@@ -18,6 +18,6 @@ export class CoverPage implements OnInit {
     }
 
     toIndex() {
-        this.router.navigateByUrl('/tabs');
+        this.router.navigateByUrl('/index');
     }
 }

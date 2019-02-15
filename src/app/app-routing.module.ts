@@ -7,7 +7,7 @@ const routes: Routes = [
         redirectTo: '/cover', pathMatch: 'full'
     },
     {
-        path: 'tabs',
+        path: 'index',
         loadChildren: './tabs/tabs.module#TabsPageModule'
     },
     {
