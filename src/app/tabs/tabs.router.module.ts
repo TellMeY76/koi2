@@ -27,6 +27,15 @@ const routes: Routes = [
                 ]
             },
             {
+                path: 'notice',
+                children: [
+                    {
+                        path: '',
+                        loadChildren: '../notice/notice.module#NoticePageModule'
+                    }
+                ]
+            },
+            {
                 path: 'policy_match',
                 children: [
                     {
