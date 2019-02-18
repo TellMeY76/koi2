@@ -1,0 +1,30 @@
+<ion-content>
+    <ion-segment (ionChange)="segmentChanged($event)" mode="md" value="注册方案" #contentSegment>
+        <ion-segment-button value="注册方案">
+            <ion-label>注册方案</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="政策匹配">
+            <ion-label>政策匹配</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="融资计划">
+            <ion-label>融资计划</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="财税计划">
+            <ion-label>财税计划</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+    <ion-slides pager="false" (ionSlideDidChange)="" [options]="slideOpts" #contentSlides>
+        <ion-slide>
+            <app-tab-x></app-tab-x>
+        </ion-slide>
+        <ion-slide>
+            <app-tab-x></app-tab-x>
+        </ion-slide>
+        <ion-slide>
+            <app-tab-x></app-tab-x>
+        </ion-slide>
+        <ion-slide>
+            <app-tab-x></app-tab-x>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

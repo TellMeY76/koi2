@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {map} from 'rxjs/operators';
 import {RepoDetail, RepoSchedule} from '../model/report';
@@ -10,7 +10,7 @@ import {REPO_DETAILS, SCHEDULES} from '../config/reportDetails';
     styleUrls: ['./tab-x.page.scss', '../../assets/css/timeline.scss'],
 })
 export class TabXPage implements OnInit {
-    tabId = null;
+    @Input() tabId = null;
     info: RepoDetail = new RepoDetail();
     schedule: RepoSchedule = new RepoSchedule();
 

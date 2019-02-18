@@ -18,6 +18,15 @@ const routes: Routes = [
                 ]
             },
             {
+                path: 'repo-content',
+                children: [
+                    {
+                        path: '',
+                        loadChildren: '../repo-content/repo-content.module#RepoContentPageModule'
+                    }
+                ]
+            },
+            {
                 path: 'policy_match',
                 children: [
                     {
