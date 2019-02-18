@@ -10,7 +10,7 @@ import {REPO_DETAILS, SCHEDULES} from '../config/reportDetails';
     styleUrls: ['./tab-x.page.scss', '../../assets/css/timeline.scss'],
 })
 export class TabXPage implements OnInit {
-    @Input() tabId = null;
+    tabId = null;
     info: RepoDetail = new RepoDetail();
     schedule: RepoSchedule = new RepoSchedule();
 

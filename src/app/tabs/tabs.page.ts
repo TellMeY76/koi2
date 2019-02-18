@@ -13,19 +13,19 @@ export class TabsPage {
     constructor(public navCtrl: NavController) {
     }
 
-    routerForward(tabs) {
-        const idx = this.tabs.indexOf(tabs.getSelected());
-        if (idx < this.tabs.length - 1) {
-            // tabs.select(this.tabs[idx + 1]);
-            this.navCtrl.navigateForward(`/index/tabs/${this.tabs[idx + 1]}`);
-        }
-    }
-
-    routerBack(tabs) {
-        const idx = this.tabs.indexOf(tabs.getSelected());
-        if (idx > 0) {
-            // tabs.select(this.tabs[idx - 1]);
-            this.navCtrl.navigateBack(`/index/tabs/${this.tabs[idx - 1]}`);
-        }
-    }
+    // routerForward(tabs) {
+    //     const idx = this.tabs.indexOf(tabs.getSelected());
+    //     if (idx < this.tabs.length - 1) {
+    //         // tabs.select(this.tabs[idx + 1]);
+    //         this.navCtrl.navigateForward(`/index/tabs/${this.tabs[idx + 1]}`);
+    //     }
+    // }
+    //
+    // routerBack(tabs) {
+    //     const idx = this.tabs.indexOf(tabs.getSelected());
+    //     if (idx > 0) {
+    //         // tabs.select(this.tabs[idx - 1]);
+    //         this.navCtrl.navigateBack(`/index/tabs/${this.tabs[idx - 1]}`);
+    //     }
+    // }
 }

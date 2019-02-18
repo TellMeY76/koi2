@@ -1,0 +1,21 @@
+.report-tab-btns {
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+}
+
+.report-tab-btn {
+
+}
+
+.report-slides {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+
+  .report-slide {
+    text-align: unset !important;
+  }
+}
+
+

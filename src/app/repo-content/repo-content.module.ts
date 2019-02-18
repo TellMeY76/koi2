@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { RepoContentPage } from './repo-content.page';
+import { RepoTabComponent } from './repo-tab/repo-tab.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RepoContentPage]
+  declarations: [RepoContentPage, RepoTabComponent]
 })
 export class RepoContentPageModule {}

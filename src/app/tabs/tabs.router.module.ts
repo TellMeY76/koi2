@@ -67,14 +67,14 @@ const routes: Routes = [
             },
             {
                 path: '',
-                redirectTo: '/tabs/registration_scheme',
+                redirectTo: '/tabs/repo-content',
                 pathMatch: 'full'
             }
         ]
     },
     {
         path: '',
-        redirectTo: '/index/tabs/registration_scheme',
+        redirectTo: '/index/tabs/repo-content',
         pathMatch: 'full'
     }
 ];

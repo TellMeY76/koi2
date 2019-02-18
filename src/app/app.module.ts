@@ -8,6 +8,7 @@ import {StatusBar} from '@ionic-native/status-bar/ngx';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import {TabXPage} from './tab-x/tab-x.page';
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = <any>{
