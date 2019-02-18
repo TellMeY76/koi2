@@ -41,6 +41,7 @@ export class ScheduleItem {
   tip: string;
   executive: string;
   import?: boolean;
+  complete: string;
 }
 
 export class Package {

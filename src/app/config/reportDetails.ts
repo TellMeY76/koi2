@@ -1,4 +1,4 @@
-import {RepoDetail} from '../model/report';
+import { RepoDetail } from '../model/report';
 
 export const REPO_DETAILS: RepoDetail[] = [
   {
@@ -24,10 +24,10 @@ export const REPO_DETAILS: RepoDetail[] = [
     suggest: '宁波市为鼓励大众创业，万众创新，对于初创的中小企业制定了一系列普惠性政策。根据您的需求与现状，我们为您匹配了以下创业政策：',
     weAdvice: {
       label: '',
-      wordValues: [{word: '创业者社会保险补贴', value: '最高补助3万元'}, {word: '创业带动就业补贴', value: '最高10万元'},
-        {word: '发明专利资助', value: '高新区奖励3.8万'}, {word: '宁波市智团创业计划', value: '最高奖励50万元'}, {word: '园区退税奖励', value: '最高退50%'},
-        {word: '宁波市创业担保贷款', value: '最高额度30万元'}, {word: '宁波小微企业创业创新服务券', value: '最高抵扣5000元'}, {word: '创业场租资助', value: '每年最高补贴6000元'},
-        {word: '小微企业残保金免征', value: '少于30人'}, {word: '宁波市科技创新券', value: '2万元'}, {word: '宁波市国内发明专利年费', value: '补贴年费的30%-50%'},
+      wordValues: [{ word: '创业者社会保险补贴', value: '最高补助3万元' }, { word: '创业带动就业补贴', value: '最高10万元' },
+      { word: '发明专利资助', value: '高新区奖励3.8万' }, { word: '宁波市智团创业计划', value: '最高奖励50万元' }, { word: '园区退税奖励', value: '最高退50%' },
+      { word: '宁波市创业担保贷款', value: '最高额度30万元' }, { word: '宁波小微企业创业创新服务券', value: '最高抵扣5000元' }, { word: '创业场租资助', value: '每年最高补贴6000元' },
+      { word: '小微企业残保金免征', value: '少于30人' }, { word: '宁波市科技创新券', value: '2万元' }, { word: '宁波市国内发明专利年费', value: '补贴年费的30%-50%' },
       ]
     }
   },
@@ -41,7 +41,7 @@ export const REPO_DETAILS: RepoDetail[] = [
     weAdvice: {
       label: '',
       contents: ['实施新四板（甬股交）挂牌，不仅挂牌费有补贴，获得融资、银行贷款还有额外奖励。', '安利一款产品：建设银行“云稅贷”，' +
-      '纳税10万元，可贷100万，年化5.52%。',
+        '纳税10万元，可贷100万，年化5.52%。',
         '招用这两类人（宁波户籍劳动者、毕业5年内高校毕业生）银行贷款还有贴息补助，额度最高300万元。']
     }
   },
@@ -64,73 +64,73 @@ export const SCHEDULES = [
   {
     title: '注册方案 & 股权架构设计',
     schedule: [
-      {content: '名称核准', tip: '', date: '2019.2.14', executive: '易创注册部 陈瑜波'},
-      {content: '注册地址申请', tip: '2个工作日', date: '2019.2.17', executive: '易创注册部 陈瑜波'},
-      {content: '股东签字', tip: '股东决定、章程，在线签署', date: '2019.2.17', executive: '易创注册部 陈瑜波'},
-      {content: '领取证照', tip: '领取营业执照，刻制公章', date: '2019.2.20', executive: '易创注册部 陈瑜波'},
-      {content: '银行开户', import: true, tip: '银行未选择', date: '2019.2.22', executive: '易创注册部 陈瑜波'},
-      {content: '税务落户', tip: '小规模纳税人', date: '2019.2.25', executive: '易创注册部 陈瑜波'},
-      {content: '增资扩股，完成投资人引入', tip: '', date: '2019.3.10', executive: '易创注册部 陈瑜波'},
-      {content: '设立员工持股平台', tip: '股权投资合伙有限企业', date: ' 2019.8.20', executive: '易创注册部 陈瑜波'},
-      {content: '其他安排事项', tip: '', date: ' ...', executive: '...'},
+      { content: '名称核准', tip: '', date: '2019.2.14', executive: '易创注册部 陈瑜波', complete: 'ture' },
+      { content: '注册地址申请', tip: '2个工作日', date: '2019.2.17', executive: '易创注册部 陈瑜波', complete: 'ture' },
+      { content: '股东签字', tip: '股东决定、章程，在线签署', date: '2019.2.17', executive: '易创注册部 陈瑜波',complete: 'false' },
+      { content: '领取证照', tip: '领取营业执照，刻制公章', date: '2019.2.20', executive: '易创注册部 陈瑜波',complete: 'false' },
+      { content: '银行开户', import: true, tip: '银行未选择', date: '2019.2.22', executive: '易创注册部 陈瑜波' ,complete: 'false'},
+      { content: '税务落户', tip: '小规模纳税人', date: '2019.2.25', executive: '易创注册部 陈瑜波',complete: 'false' },
+      { content: '增资扩股，完成投资人引入', tip: '', date: '2019.3.10', executive: '易创注册部 陈瑜波',complete: 'false' },
+      { content: '设立员工持股平台', tip: '股权投资合伙有限企业', date: ' 2019.8.20', executive: '易创注册部 陈瑜波',complete: 'false' },
+      { content: '其他安排事项', tip: '', date: ' ...', executive: '...' ,complete: 'false'},
     ]
   },
   {
     title: '政策匹配',
     schedule: [
-      {content: '科技型企业认定', tip: '园区退税翻倍', date: '2019', executive: '易创顾问 齐培培'},
-      {content: '优质型企业备案', tip: '最高50万奖励', date: '2019.4-5', executive: '易创申报 吴磊敏'},
-      {content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019.4-5', executive: '企业负责人'},
-      {content: '优质产品申报', tip: '政府采购目录', date: '2019.4-5', executive: '易创申报 吴磊敏'},
-      {content: '试产新产品备案', tip: '每产品2000', date: '2019.4-5', executive: '易创申报 吴磊敏'},
-      {content: '知识产权申请', tip: '科技型项目申报的前提', date: ' 2019.4.21', executive: '易创知产 沈佳璐'},
-      {content: '撰写可行性分析报告', tip: '为后续项目申报打好文件基础', date: '2019.4.24', executive: '企业负责人'},
-      {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.4.20', executive: '易创申报 吴磊敏'},
-      {content: '创业场租补贴', tip: '年租金的20%,每年最高6000', date: '2019.6', executive: '易创申报 吴磊敏'},
-      {content: '研发费用补贴申请', tip: '最高不超过支出额的5%给予补助', date: '2019.6', executive: '易创申报 吴磊敏'},
-      {content: '智团项目申报', tip: '最高50万元补贴', date: '2019.8', executive: '易创申报 吴磊敏'},
+      { content: '科技型企业认定', tip: '园区退税翻倍', date: '2019', executive: '易创顾问 齐培培' ,complete: 'false'},
+      { content: '优质型企业备案', tip: '最高50万奖励', date: '2019.4-5', executive: '易创申报 吴磊敏' ,complete: 'false'},
+      { content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019.4-5', executive: '企业负责人' ,complete: 'false'},
+      { content: '优质产品申报', tip: '政府采购目录', date: '2019.4-5', executive: '易创申报 吴磊敏' ,complete: 'false'},
+      { content: '试产新产品备案', tip: '每产品2000', date: '2019.4-5', executive: '易创申报 吴磊敏',complete: 'false' },
+      { content: '知识产权申请', tip: '科技型项目申报的前提', date: ' 2019.4.21', executive: '易创知产 沈佳璐',complete: 'false' },
+      { content: '撰写可行性分析报告', tip: '为后续项目申报打好文件基础', date: '2019.4.24', executive: '企业负责人',complete: 'false' },
+      { content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.4.20', executive: '易创申报 吴磊敏' ,complete: 'false'},
+      { content: '创业场租补贴', tip: '年租金的20%,每年最高6000', date: '2019.6', executive: '易创申报 吴磊敏' ,complete: 'false'},
+      { content: '研发费用补贴申请', tip: '最高不超过支出额的5%给予补助', date: '2019.6', executive: '易创申报 吴磊敏',complete: 'false' },
+      { content: '智团项目申报', tip: '最高50万元补贴', date: '2019.8', executive: '易创申报 吴磊敏' ,complete: 'false'},
     ]
   },
   {
     title: '融资计划',
     schedule: [
-      {content: '甬股交挂牌', tip: '', date: '2019.4.14 ', executive: '易创申报 吴磊敏'},
-      {content: '优化商业融资计划书', tip: '', date: '2019.6.13', executive: ' 企业负责人'},
-      {content: '参加138期无咖“资本相亲会”', tip: '', date: ' 2019.6.28', executive: ' 企业负责人'},
-      {content: '申请天使引导基金', tip: '', date: '2019.7.11', executive: '企业负责人'},
-      {content: '约银行谈税金贷', tip: '', date: '2019.11.27', executive: ' 企业负责人'},
-      {content: '宁波创业担保贷款申请', tip: '', date: '2019.12.15', executive: '易创申报 吴磊敏'},
+      { content: '甬股交挂牌', tip: '', date: '2019.4.14 ', executive: '易创申报 吴磊敏' ,complete: 'false'},
+      { content: '优化商业融资计划书', tip: '', date: '2019.6.13', executive: ' 企业负责人' ,complete: 'false'},
+      { content: '参加138期无咖“资本相亲会”', tip: '', date: ' 2019.6.28', executive: ' 企业负责人' ,complete: 'false'},
+      { content: '申请天使引导基金', tip: '', date: '2019.7.11', executive: '企业负责人',complete: 'false' },
+      { content: '约银行谈税金贷', tip: '', date: '2019.11.27', executive: ' 企业负责人' ,complete: 'false'},
+      { content: '宁波创业担保贷款申请', tip: '', date: '2019.12.15', executive: '易创申报 吴磊敏' ,complete: 'false'},
     ]
   },
   {
     title: '财税计划',
     schedule: [
-      {content: '票据分类及整理 ', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人'},
-      {content: '打印银行回单对账单', tip: '每月工作', date: '2019.2.22前', executive: '易创会计'},
-      {content: '税控盘抄税', tip: '每月工作', date: '2019.2.22前', executive: '易创会计'},
-      {content: '增值税发票认证', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人'},
-      {content: '计算当月应交增值税并汇报', tip: '每月工作', date: '2019.2.22前', executive: '易创会计'},
-      {content: '把控票据的合规性，根据原始凭证进行账务处理', tip: '每月工作', date: '2019.2.22前', executive: '易创会计'},
-      {content: '发现汽车类发票，提醒客户签订租赁合同 ', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人'},
-      {content: '确定研发项目名称，并做研发费用单独列支', tip: '每月工作', date: '2019.2.22前', executive: '易创会计'},
-      {content: '折旧、摊销、长期待摊费用分摊表制作 ', tip: '每月工作', date: '2019.2.22前', executive: '易创会计'},
-      {content: '核算确认材料/库存成本  ', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人'},
-      {content: '制作发送工资表', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人'},
-      {content: '提示发放高温补贴', tip: '每月工作', date: '2019.2.22前', executive: '易创会计'},
-      {content: '向客户汇报本月的税收及财务状况，发送财报数据', tip: '每月工作', date: '2019.2.22前', executive: '易创会计'},
-      {content: '电子税务局各项税费申报', tip: '每月工作', date: '2019.2.22前', executive: '易创会计'},
-      {content: '自然人税收管理系统个税申报', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人'},
-      {content: '国地税税款扣缴', tip: '每月工作', date: '2019.2.22后', executive: '易创会计'},
-      {content: '社保人员增减', tip: '每月工作', date: '2019.2.23前', executive: '企业负责人'},
-      {content: '会计组长定期审账，审完修改', tip: '每月工作', date: '2019.2.28', executive: '易创会计'},
+      { content: '票据分类及整理 ', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人' ,complete: 'false'},
+      { content: '打印银行回单对账单', tip: '每月工作', date: '2019.2.22前', executive: '易创会计' ,complete: 'false'},
+      { content: '税控盘抄税', tip: '每月工作', date: '2019.2.22前', executive: '易创会计',complete: 'false' },
+      { content: '增值税发票认证', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人',complete: 'false' },
+      { content: '计算当月应交增值税并汇报', tip: '每月工作', date: '2019.2.22前', executive: '易创会计',complete: 'false' },
+      { content: '把控票据的合规性，根据原始凭证进行账务处理', tip: '每月工作', date: '2019.2.22前', executive: '易创会计',complete: 'false' },
+      { content: '发现汽车类发票，提醒客户签订租赁合同 ', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人' ,complete: 'false'},
+      { content: '确定研发项目名称，并做研发费用单独列支', tip: '每月工作', date: '2019.2.22前', executive: '易创会计' ,complete: 'false'},
+      { content: '折旧、摊销、长期待摊费用分摊表制作 ', tip: '每月工作', date: '2019.2.22前', executive: '易创会计',complete: 'false' },
+      { content: '核算确认材料/库存成本  ', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人' ,complete: 'false'},
+      { content: '制作发送工资表', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人' ,complete: 'false'},
+      { content: '提示发放高温补贴', tip: '每月工作', date: '2019.2.22前', executive: '易创会计' ,complete: 'false'},
+      { content: '向客户汇报本月的税收及财务状况，发送财报数据', tip: '每月工作', date: '2019.2.22前', executive: '易创会计' ,complete: 'false'},
+      { content: '电子税务局各项税费申报', tip: '每月工作', date: '2019.2.22前', executive: '易创会计' ,complete: 'false'},
+      { content: '自然人税收管理系统个税申报', tip: '每月工作', date: '2019.2.22前', executive: '企业负责人' ,complete: 'false'},
+      { content: '国地税税款扣缴', tip: '每月工作', date: '2019.2.22后', executive: '易创会计' ,complete: 'false'},
+      { content: '社保人员增减', tip: '每月工作', date: '2019.2.23前', executive: '企业负责人',complete: 'false' },
+      { content: '会计组长定期审账，审完修改', tip: '每月工作', date: '2019.2.28', executive: '易创会计' ,complete: 'false'},
 
-      {content: '凭证打印、装订及交接 ', tip: '', date: '2019.12.31', executive: '易创会计'},
-      {content: '社保基数调整 ', tip: '', date: '2019.5', executive: '易创会计'},
-      {content: '所得税汇算清缴', tip: '', date: '2019.5', executive: '易创会计'},
-      {content: '工商年度公示', tip: '', date: '2019.6', executive: '企业负责人'},
-      {content: '公积金年检', tip: '', date: '2019.7', executive: '易创会计'},
-      {content: '公积金基数调整 ', tip: '', date: '2019.7', executive: '易创会计'},
-      {content: '社保年检 ', tip: '', date: '2019.7月底前', executive: '易创会计'},
+      { content: '凭证打印、装订及交接 ', tip: '', date: '2019.12.31', executive: '易创会计' ,complete: 'false'},
+      { content: '社保基数调整 ', tip: '', date: '2019.5', executive: '易创会计' ,complete: 'false'},
+      { content: '所得税汇算清缴', tip: '', date: '2019.5', executive: '易创会计' ,complete: 'false'},
+      { content: '工商年度公示', tip: '', date: '2019.6', executive: '企业负责人' ,complete: 'false'},
+      { content: '公积金年检', tip: '', date: '2019.7', executive: '易创会计' ,complete: 'false'},
+      { content: '公积金基数调整 ', tip: '', date: '2019.7', executive: '易创会计' ,complete: 'false'},
+      { content: '社保年检 ', tip: '', date: '2019.7月底前', executive: '易创会计',complete: 'false' },
     ]
   }
 ];

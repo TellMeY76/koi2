@@ -48,9 +48,31 @@
   left: 15px;
   width: 10px;
   height: 10px;
+
+  ion-icon{
+    display: none;
+    color: #28e070;
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    background: #fff;
+    }
+}
+
+.itemCompleted{
+  ion-icon{
+    display: block;
+    }
+}
+
+.itemNormal{
   background: #a3bed3;
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+
+  ion-icon{
+    display: none;
+  }
 }
 
 .action-plan-timeline-content {

@@ -76,14 +76,14 @@ const routes: Routes = [
             },
             {
                 path: '',
-                redirectTo: '/tabs/repo-content',
+                redirectTo: '/tabs/notice',
                 pathMatch: 'full'
             }
         ]
     },
     {
         path: '',
-        redirectTo: '/index/tabs/repo-content',
+        redirectTo: '/index/tabs/notice',
         pathMatch: 'full'
     }
 ];
