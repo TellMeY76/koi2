@@ -2,7 +2,9 @@
 
     <ion-card mode="ios">
         <ion-item *ngIf="consultant">
-            <img class="notice-head-img" [src]="consultant.headImg">
+            <ion-avatar class="notice-head-img">
+                <ion-img [src]="consultant.headImg"></ion-img>
+            </ion-avatar>
             <ion-card-content class="notice-color-normal">
                 <p>您的专属顾问：{{consultant.name}}</p>
                 <p>联系手机：<a href="tel:{{consultant.tel}}">
@@ -15,13 +17,13 @@
             <p>已完成：{{noticeInfo.finished}}</p>
             <p class="notice-color-waring">待完成：{{noticeInfo.Upcoming}}</p>
             <p>距离注册办结：
-                <ng-template ngIf="!overTime">
+                <ng-template ngIf="!overTime;else elseBlock">
                     <span class="notice-color-waring">{{reDays}}</span> 天
                     <span class="notice-color-waring">{{reHours}}</span> 小时
                     <span class="notice-color-waring">{{reMinutes}}</span> 分
                     <span class="notice-color-waring">{{reSecond}}</span> 秒
                 </ng-template>
-                <ng-template>
+                <ng-template #elseBlock>
                     <span class="notice-color-waring">已超时</span>
                 </ng-template>
             </p>

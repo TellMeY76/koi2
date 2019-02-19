@@ -1,6 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {SlideTabs} from '../config/tabs';
-import {LoadingController} from '@ionic/angular';
 
 @Component({
     selector: 'app-repo-content',
@@ -11,30 +10,19 @@ export class RepoContentPage implements OnInit {
     slideOpts = {
         effect: 'flip'
     };
+    finished = false;
     @ViewChild('contentSlides') slides;
     @ViewChild('contentSegment') segments;
     slidesMoving: boolean;
     slidesHeight: number;
     tabs = SlideTabs;
 
-    constructor(public loadingController: LoadingController) {
+    constructor() {
 
     }
 
     ngOnInit() {
-        this.loadingSet();
-    }
-
-    async loadingSet() {
-        const loading = await this.loadingController.create({
-            spinner: 'dots',
-            message: '正在加载...',
-            mode: 'md',
-            translucent: true
-        });
-        await loading.present();
         this.setHeight();
-        loading.dismiss();
     }
 
     segmentChanged() {
