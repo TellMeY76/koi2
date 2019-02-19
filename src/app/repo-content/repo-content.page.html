@@ -1,4 +1,4 @@
-<ion-content>
+<ion-header mode="ios">
     <ion-segment class="report-tab-btns" (ionChange)="segmentChanged()" mode="md"
                  value="注册方案"
                  #contentSegment>
@@ -15,6 +15,8 @@
             <ion-label>财税计划</ion-label>
         </ion-segment-button>
     </ion-segment>
+</ion-header>
+<ion-content>
     <ion-slides pager="false"
                 class="report-slides"
                 [ngStyle]="{ 'height': slidesMoving ? 'auto' : (slidesHeight + 'px') }"

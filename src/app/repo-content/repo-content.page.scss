@@ -1,6 +1,4 @@
 .report-tab-btns {
-  position: fixed;
-  z-index: 999;
   background: #fff;
 }
 
@@ -9,7 +7,6 @@
 }
 
 .report-slides {
-  margin-top: 3em;
   display: flex;
   flex-direction: row;
 

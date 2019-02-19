@@ -18,6 +18,5 @@ export class RepoTabComponent implements OnInit {
     ngOnInit() {
         this.info = REPO_DETAILS[this.tabId];
         this.schedule = SCHEDULES[this.tabId];
-        console.log(this.schedule);
     }
 }

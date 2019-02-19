@@ -1,0 +1,32 @@
+$normal-color: #666;
+$warning-color: #f25454;
+
+.notice-head-img {
+  width: 4em;
+  border-radius: 2em;
+  margin: .5em;
+}
+
+.notice-step {
+  padding: .5em 2em;
+}
+
+.notice-color-normal {
+  color: $normal-color;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.notice-color-waring {
+  color: $warning-color;
+}
+
+.notice-card-title {
+  text-align: center;
+}
+
+.notice-card-nextLine {
+  text-indent: 2em;
+}
