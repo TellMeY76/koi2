@@ -4,7 +4,7 @@ import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: '/cover', pathMatch: 'full'
+        redirectTo: 'index', pathMatch: 'full'
     },
     {
         path: 'index',

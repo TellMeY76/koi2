@@ -4,6 +4,11 @@ import {TabsPage} from './tabs.page';
 
 const routes: Routes = [
     {
+        path: '',
+        redirectTo: '/index/tabs/notice',
+        pathMatch: 'full'
+    },
+    {
         path: 'tabs',
         component: TabsPage,
         children: [
@@ -76,16 +81,12 @@ const routes: Routes = [
             },
             {
                 path: '',
-                redirectTo: '/tabs/notice',
+                redirectTo: '/index/tabs/notice',
                 pathMatch: 'full'
             }
         ]
     },
-    {
-        path: '',
-        redirectTo: '/index/tabs/notice',
-        pathMatch: 'full'
-    }
+
 ];
 
 @NgModule({

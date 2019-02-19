@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {SlideTabs} from '../config/tabs';
+import {LoadingController} from '@ionic/angular';
 
 @Component({
     selector: 'app-repo-content',
@@ -21,6 +22,7 @@ export class RepoContentPage implements OnInit {
 
     ngOnInit() {
         this.setHeight();
+
     }
 
     segmentChanged() {

@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {NOTICE} from '../config/notice';
 import {Consultant, Notice} from '../model/notice';
+import {LoadingController} from '@ionic/angular';
+import {PACKAGES} from '../config/package';
 
 @Component({
     selector: 'app-notice',
