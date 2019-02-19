@@ -17,12 +17,24 @@ export class RepoContentPage implements OnInit {
     slidesHeight: number;
     tabs = SlideTabs;
 
-    constructor() {
+    constructor(public loadingController: LoadingController) {
+
     }
 
     ngOnInit() {
-        this.setHeight();
+        this.loadingSet();
+    }
 
+    async loadingSet() {
+        const loading = await this.loadingController.create({
+            spinner: 'dots',
+            message: '正在加载...',
+            mode: 'md',
+            translucent: true
+        });
+        await loading.present();
+        this.setHeight();
+        loading.dismiss();
     }
 
     segmentChanged() {

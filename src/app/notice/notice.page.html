@@ -1,11 +1,13 @@
-<ion-content>
+<ion-content *ngIf="finished">
 
     <ion-card mode="ios">
         <ion-item *ngIf="consultant">
             <img class="notice-head-img" [src]="consultant.headImg">
             <ion-card-content class="notice-color-normal">
                 <p>您的专属顾问：{{consultant.name}}</p>
-                <p>联系手机：<a href="tel:{{consultant.tel}}">{{consultant.tel}}</a></p>
+                <p>联系手机：<a href="tel:{{consultant.tel}}">
+                    <ion-icon name="call"></ion-icon>
+                    {{consultant.tel}}</a></p>
             </ion-card-content>
         </ion-item>
 
@@ -27,10 +29,10 @@
     </ion-card>
 
     <ion-card mode="ios">
-        <ion-card-header  mode="md">
+        <ion-card-header mode="md">
             <ion-card-title class="notice-card-title" mode="md">请您尽快完成股东签字</ion-card-title>
         </ion-card-header>
-        <ion-card-content  mode="md">
+        <ion-card-content mode="md">
             <p>尊敬的周总：</p>
             <p class="notice-card-nextLine">恭喜您！目前您只需完成股东签字就可正式
                 领取营业执照啦！请您完成以下操作：</p>

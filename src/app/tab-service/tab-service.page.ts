@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Package} from '../model/report';
 import {PACKAGES} from '../config/package';
-import {LoadingController} from '@ionic/angular';
 
 @Component({
     selector: 'app-tab-service',

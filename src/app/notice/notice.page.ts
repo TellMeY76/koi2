@@ -1,15 +1,15 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {NOTICE} from '../config/notice';
 import {Consultant, Notice} from '../model/notice';
 import {LoadingController} from '@ionic/angular';
-import {PACKAGES} from '../config/package';
 
 @Component({
     selector: 'app-notice',
     templateUrl: './notice.page.html',
     styleUrls: ['./notice.page.scss'],
 })
-export class NoticePage implements OnInit {
+export class NoticePage {
+    finished = false;
     noticeInfo: Notice = NOTICE;
     consultant: Consultant = this.noticeInfo.consultant;
     reDays: number;
@@ -18,20 +18,27 @@ export class NoticePage implements OnInit {
     reSecond: number;
     overTime = false;
 
-    constructor() {
-    }
-
-    ngOnInit() {
+    constructor(public loadingController: LoadingController) {
         this.countDown();
     }
 
-    countDown() {
+    async countDown() {
+        const loading = await this.loadingController.create({
+            spinner: 'dots',
+            message: '正在加载...',
+            mode: 'md',
+            translucent: true
+        });
+        await loading.present();
         const countDownDate = new Date(this.noticeInfo.deadline).getTime();
         const now = new Date().getTime();
         const distance = countDownDate - now;
         if (distance < 0) {
             return this.overTime = true;
         }
+        this.setContDown(countDownDate);
+        this.finished = true;
+        loading.dismiss();
         setInterval(() => {
             this.setContDown(countDownDate);
         }, 1000);
