@@ -1,49 +1,84 @@
 $normal-color: #666;
 $warning-color: #f25454;
+$transition: all .3s;
+$step-transition: all .4s;
 
-.fixed-bar-margin{
-  margin-top: 12em;
+$consultant-font-size: 14px;
+$font-size-zoom: .98em;
+$fixed-bar-margin: 10em;
+$fixed-card-margin: 14.5em;
+
+.notice-header {
+  position: relative;
+  z-index: 99;
+  background: #fff;
+  margin-top: 1em;
+  margin-bottom: 0;
+  transition: $transition;
 }
 
-.notice-consultant-info{
-  transition: all .3s;
+.fixed-card-margin {
+  margin-top: $fixed-card-margin;
+}
+
+.fixed-bar-margin {
+  margin-top: $fixed-bar-margin;
+}
+
+
+.notice-consultant-info {
+  transition: $transition;
+
+  p {
+    font-size: $consultant-font-size;
+  }
 }
 
 .notice-head-img {
-  width: 4em;
-  height: 4em;
+  width: 68px;
+  height: 68px;
   margin: .5em;
-  transition: all .3s;
 }
 
 .notice-step {
   padding: .5em 2em;
-  transition: all .3s;
+  transition: $step-transition;
 }
 
-.notice-fixed-bar{
-  box-shadow: none;
-  position: fixed;
-  z-index: 999;
-  background: #fff;
-  width: 100%;
+.notice-fixed-bar {
   margin: 0;
-  box-shadow: 0px 1px 3px rgba(2, 8, 20, 0.06), 0px 1px 2px rgba(2, 8, 20, 0.04);
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 13px rgba(2, 8, 20, 0.06), 0 1px 12px rgba(2, 8, 20, 0.04);
 
-  .notice-consultant-info{
-    --border-color:#fff;
+  .notice-consultant-info {
+    --border-color: #fff;
     width: 100%;
+    transition: $transition;
+
+    p {
+      transition: $transition;
+      font-size: $font-size-zoom;
+    }
   }
 
   .notice-head-img {
-    width: 3em;
-    height: 3em;
+    width: 51px;
+    height: 51px;
     margin: .3em .5em;
+    transition: $transition;
+  }
+
+  .notice-card {
+    position: relative;
+    z-index: 1;
+    transition: $transition;
   }
 
   .notice-step {
-    height: 0;
-    padding: 0;
+    max-height: 0;
+    padding: 0 2em;
+    color: #fff;
     overflow: hidden;
   }
 }
@@ -72,4 +107,31 @@ $warning-color: #f25454;
 
 .notice-card-nextLine {
   text-indent: 2em;
+}
+
+@media screen and (max-width: 320px) {
+  $consultant-font-size: .7em;
+  $font-size-zoom: .8em;
+
+  .notice-info-card {
+    padding: 0 .4em;
+  }
+
+  .notice-fixed-bar {
+    .notice-consultant-info p {
+      font-size: $font-size-zoom;
+    }
+
+    .notice-step {
+      padding: 0 1em;
+    }
+  }
+
+  .notice-step {
+    padding: .5em 1em;
+  }
+
+  .notice-consultant-info p {
+    font-size: $consultant-font-size;
+  }
 }

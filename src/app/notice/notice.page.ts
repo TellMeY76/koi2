@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { NOTICE } from '../config/notice';
-import { Consultant, Notice } from '../model/notice';
-import { LoadingController } from '@ionic/angular';
+import {Component} from '@angular/core';
+import {NOTICE} from '../config/notice';
+import {Consultant, Notice} from '../model/notice';
+import {LoadingController} from '@ionic/angular';
 
 @Component({
     selector: 'app-notice',
@@ -17,7 +17,7 @@ export class NoticePage {
     reMinutes: number;
     reSecond: number;
     overTime = false;
-    scrollDir: string = 'default';
+    scrollDir = 'default';
 
     constructor(public loadingController: LoadingController) {
         this.countDown();
@@ -55,11 +55,11 @@ export class NoticePage {
     }
 
     swipe(event) {
-        if(event.detail.deltaY > 30 ){
-            this.scrollDir =  'down';
-        }else if(event.detail.scrollTop < 100){
-            this.scrollDir =  'up';
+        if (event.detail.scrollTop > 0) {
+            this.scrollDir = 'down';
+        } else if (event.detail.scrollTop < 50) {
+            this.scrollDir = 'up';
         }
-        console.log(event);
     }
+
 }
