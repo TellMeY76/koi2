@@ -2,7 +2,7 @@
              scroll-events="true"
              (ionScroll)='swipe($event)'>
 
-    <ion-card mode="ios" class="notice-header" slot="fixed" [ngClass]="scrollDir === 'down' ? 'notice-fixed-bar' : ''">
+    <ion-card mode="ios" class="notice-header">
         <ion-item *ngIf="consultant" class="notice-consultant-info" href="tel:{{consultant.tel}}" mode="md">
             <ion-avatar class="notice-head-img">
                 <img [src]="consultant.headImg">
@@ -28,8 +28,7 @@
         </ion-card-content>
     </ion-card>
 
-    <ion-card mode="ios" class="notice-card"
-              [ngClass]="scrollDir === 'down' ? 'fixed-bar-margin' : 'fixed-card-margin'">
+    <ion-card mode="ios" class="notice-card">
         <ion-card-header mode="md">
             <ion-card-title class="notice-card-title" mode="md">下一步：银行开户、税务备案</ion-card-title>
         </ion-card-header>
@@ -39,7 +38,7 @@
             <p class="notice-card-nextLine"> 1.银行开户需要3个工作日，请告知您的空闲时间，方便预约您到场办理。</p>
             <p class="notice-card-nextLine">2.银行网银开通，需要提供2人身份证原件，请提前准备。</p>
             <p class="notice-card-nextLine">3.税务备案完成方可开具发票，请提前做好销售预估，方便申请发票额度。</p><br>
-            <p class="notice-card-nextLine">已预约银行：招商银行会展中心支行，客户经理：无，联系方式：无</p>
+            <p class="notice-card-nextLine">已预约银行：招商银行会展中心支行，客户经理：许丹，联系方式：13586686213</p>
 
         </ion-card-content>
     </ion-card>
