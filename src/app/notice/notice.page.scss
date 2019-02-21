@@ -1,12 +1,12 @@
 $normal-color: #666;
 $warning-color: #f25454;
-$transition: all .3s;
-$step-transition: all .4s;
+$transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+$step-transition: all .4s cubic-bezier(.175, .885, .32, 1.275);
 
 $consultant-font-size: 14px;
 $font-size-zoom: .98em;
 $fixed-bar-margin: 10em;
-$fixed-card-margin: 14.5em;
+$fixed-card-margin: 15.5em;
 
 .notice-header {
   position: relative;

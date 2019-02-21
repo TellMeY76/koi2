@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
 import {NOTICE} from '../config/notice';
 import {Consultant, Notice} from '../model/notice';
-import {LoadingController} from '@ionic/angular';
+import {LoadingController, ModalController, PopoverController} from '@ionic/angular';
+import {ImgPopoverComponent} from './img-popover/img-popover.component';
 
 @Component({
     selector: 'app-notice',
@@ -18,8 +19,9 @@ export class NoticePage {
     reSecond: number;
     overTime = false;
     scrollDir = 'default';
+    excludeTracks: any;
 
-    constructor(public loadingController: LoadingController) {
+    constructor(public loadingController: LoadingController, public modalController: ModalController) {
         this.countDown();
     }
 
@@ -62,4 +64,15 @@ export class NoticePage {
         }
     }
 
+    async presentModal() {
+        const modal = await this.modalController.create({
+            component: ImgPopoverComponent,
+            componentProps: {excludedTracks: this.excludeTracks}
+        });
+        return await modal.present();
+    }
+
+    openImg() {
+        this.presentModal();
+    }
 }

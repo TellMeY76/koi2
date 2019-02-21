@@ -66,9 +66,9 @@ export const SCHEDULES = [
         schedule: [
             {content: '名称核准', tip: '', date: '2019.2.14', executive: '易创注册部 陈瑜波', complete: 'ture'},
             {content: '注册地址申请', tip: '2个工作日', date: '2019.2.17', executive: '易创注册部 陈瑜波', complete: 'ture'},
-            {content: '股东签字', tip: '股东决定、章程，在线签署', date: '2019.2.17', executive: '易创注册部 陈瑜波', complete: 'false'},
-            {content: '领取证照', tip: '领取营业执照，刻制公章', date: '2019.2.20', executive: '易创注册部 陈瑜波', complete: 'false'},
-            {content: '银行开户', import: true, tip: '银行未选择', date: '2019.2.22', executive: '易创注册部 陈瑜波', complete: 'false'},
+            {content: '股东签字', tip: '股东决定、章程，在线签署', date: '2019.2.17', executive: '易创注册部 陈瑜波', complete: 'ture'},
+            {content: '领取证照', tip: '领取营业执照，刻制公章', date: '2019.2.21', executive: '易创注册部 陈瑜波', complete: 'ture'},
+            {content: '银行开户', tip: '招商银行会展中心支行', date: '2019.2.22', executive: '易创注册部 陈瑜波', complete: 'false'},
             {content: '税务落户', tip: '小规模纳税人', date: '2019.2.25', executive: '易创注册部 陈瑜波', complete: 'false'},
             {content: '增资扩股，完成投资人引入', tip: '', date: '2019.3.10', executive: '易创注册部 陈瑜波', complete: 'false'},
             {content: '设立员工持股平台', tip: '股权投资合伙有限企业', date: ' 2019.8.20', executive: '易创注册部 陈瑜波', complete: 'false'},
