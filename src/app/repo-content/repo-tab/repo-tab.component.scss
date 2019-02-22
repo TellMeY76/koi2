@@ -1,7 +1,15 @@
+.report-fixed-height {
+  height: -webkit-fill-available;
+  padding-bottom: 1em;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+}
+
 .report-detail-container {
   display: flex;
   flex-direction: column;
   background: #f5f6fa;
+  flex-grow: 1;
 }
 
 .report-detail-card {
@@ -83,7 +91,7 @@
 }
 
 .report-detail-card-content p, li {
-  font-size: 14px ;
+  font-size: 14px;
   color: #333;
   line-height: 1.7;
 }
@@ -133,3 +141,4 @@
     font-size: 1.1em;
   }
 }
+

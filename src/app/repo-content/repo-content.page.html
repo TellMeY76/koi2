@@ -16,24 +16,23 @@
         </ion-segment-button>
     </ion-segment>
 </ion-header>
-<ion-content>
+<ion-content [scrollY]="false">
     <ion-slides pager="false"
+                mode="ios"
                 class="report-slides"
-                [ngStyle]="{ 'height': slidesMoving ? 'auto' : (slidesHeight + 'px') }"
-                (ionSlideDidChange)="setHeight()"
                 (ionSlideWillChange)="slideChanged()"
                 [options]="slideOpts"
                 #contentSlides>
-        <ion-slide class="report-slide">
+        <ion-slide mode="ios" class="report-slide">
             <app-repo-tab [tabId]="0"></app-repo-tab>
         </ion-slide>
-        <ion-slide class="report-slide">
+        <ion-slide mode="ios" class="report-slide">
             <app-repo-tab [tabId]="1"></app-repo-tab>
         </ion-slide>
-        <ion-slide class="report-slide">
+        <ion-slide mode="ios" class="report-slide">
             <app-repo-tab [tabId]="2"></app-repo-tab>
         </ion-slide>
-        <ion-slide class="report-slide">
+        <ion-slide mode="ios" class="report-slide">
             <app-repo-tab [tabId]="3"></app-repo-tab>
         </ion-slide>
     </ion-slides>

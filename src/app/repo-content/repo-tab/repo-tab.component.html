@@ -1,61 +1,66 @@
-<div class="report-detail-container">
-  <div class="report-detail-card">
-    <div class="report-detail-icon">
-      <ion-icon [name]="info.icon"></ion-icon>
-    </div>
-    <div class="report-detail-title">
-      <p class="detail-title-name">{{info.name}}</p>
-      <p class="detail-title-description">{{info.description}}</p>
-    </div>
-  </div>
-  <div class="report-detail-card" style="padding-bottom: 1em;">
-    <div class="report-detail-card-title">
-      {{info.statusLabel}}：
-    </div>
-    <div class="report-detail-card-content">
-      <p *ngFor="let status of info.status">{{status}}</p>
-    </div>
-  </div>
-  <div class="report-detail-card">
-    <div class="report-detail-card-title">
-      创业顾问建议：
-    </div>
-    <div class="report-detail-card-content">
-      <p class="report-detail-suggest">{{info.suggest}}</p>
-      <p class="content-label" *ngIf="info.weAdvice.label">{{info.weAdvice.label}}</p>
-      <ol class="content-list" *ngIf="info.weAdvice.contents" [ngClass]="info.weAdvice.label?'content-with-label':''">
-        <li *ngFor="let advice of info.weAdvice.contents">{{advice}}</li>
-      </ol>
-      <ol class="content-list" *ngIf="info.weAdvice.wordValues" [ngClass]="info.weAdvice.label?'content-with-label':''">
-        <li *ngFor="let wv of info.weAdvice.wordValues">{{wv.word}}
-          <span class="content-list-li-right">{{wv.value}}</span>
-        </li>
-      </ol>
-    </div>
-  </div>
-  <div class="report-detail-card">
-    <div class="report-detail-card-title">
-      行动规划：
-    </div>
-    <div class="report-detail-card-content report-detail-action-plan">
-      <div class="action-plan-timeline timeline-container">
-        <div class="action-plan-timeline-block" *ngFor="let scheduleItem of schedule['schedule']">
-          <div class="action-plan-timeline-circle" 
-          [ngClass]="scheduleItem.complete === 'ture'?'itemCompleted':'itemNormal'" >
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-          <div class="action-plan-timeline-content">
-            <div class="timeline-content-row">
-              <p class="action-plan-item action-plan-item-left">{{scheduleItem.content}}</p>
-              <p class="action-plan-item action-plan-item-right action-plan-executive">{{scheduleItem.executive}}</p>
+<div class="report-fixed-height">
+    <div class="report-detail-container">
+        <div class="report-detail-card">
+            <div class="report-detail-icon">
+                <ion-icon [name]="info.icon"></ion-icon>
             </div>
-            <div class="timeline-content-row ">
-              <p class="action-plan-item-left" [ngClass]="scheduleItem.import ? 'tipImport':'action-plan-item-tip'">{{scheduleItem.tip}}</p>
-              <p class="action-plan-date action-plan-item-right">{{scheduleItem.date}}</p>
+            <div class="report-detail-title">
+                <p class="detail-title-name">{{info.name}}</p>
+                <p class="detail-title-description">{{info.description}}</p>
             </div>
-          </div>
         </div>
-      </div>
+        <div class="report-detail-card" style="padding-bottom: 1em;">
+            <div class="report-detail-card-title">
+                {{info.statusLabel}}：
+            </div>
+            <div class="report-detail-card-content">
+                <p *ngFor="let status of info.status">{{status}}</p>
+            </div>
+        </div>
+        <div class="report-detail-card">
+            <div class="report-detail-card-title">
+                创业顾问建议：
+            </div>
+            <div class="report-detail-card-content">
+                <p class="report-detail-suggest">{{info.suggest}}</p>
+                <p class="content-label" *ngIf="info.weAdvice.label">{{info.weAdvice.label}}</p>
+                <ol class="content-list" *ngIf="info.weAdvice.contents"
+                    [ngClass]="info.weAdvice.label?'content-with-label':''">
+                    <li *ngFor="let advice of info.weAdvice.contents">{{advice}}</li>
+                </ol>
+                <ol class="content-list" *ngIf="info.weAdvice.wordValues"
+                    [ngClass]="info.weAdvice.label?'content-with-label':''">
+                    <li *ngFor="let wv of info.weAdvice.wordValues">{{wv.word}}
+                        <span class="content-list-li-right">{{wv.value}}</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="report-detail-card">
+            <div class="report-detail-card-title">
+                行动规划：
+            </div>
+            <div class="report-detail-card-content report-detail-action-plan">
+                <div class="action-plan-timeline timeline-container">
+                    <div class="action-plan-timeline-block" *ngFor="let scheduleItem of schedule['schedule']">
+                        <div class="action-plan-timeline-circle"
+                             [ngClass]="scheduleItem.complete === 'ture'?'itemCompleted':'itemNormal'">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="action-plan-timeline-content">
+                            <div class="timeline-content-row">
+                                <p class="action-plan-item action-plan-item-left">{{scheduleItem.content}}</p>
+                                <p class="action-plan-item action-plan-item-right action-plan-executive">{{scheduleItem.executive}}</p>
+                            </div>
+                            <div class="timeline-content-row ">
+                                <p class="action-plan-item-left"
+                                   [ngClass]="scheduleItem.import ? 'tipImport':'action-plan-item-tip'">{{scheduleItem.tip}}</p>
+                                <p class="action-plan-date action-plan-item-right">{{scheduleItem.date}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

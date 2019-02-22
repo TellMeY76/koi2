@@ -22,6 +22,7 @@ export class RepoContentPage implements OnInit {
     }
 
     ngOnInit() {
+        console.log(this.slides);
         this.setHeight();
     }
 
