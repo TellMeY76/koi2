@@ -16,11 +16,9 @@
         </ion-segment-button>
     </ion-segment>
 </ion-header>
-<ion-content>
+<ion-content [scrollY]="false">
     <ion-slides pager="false"
                 class="report-slides"
-                [ngStyle]="{ 'height': slidesMoving ? 'auto' : (slidesHeight + 'px') }"
-                (ionSlideDidChange)="setHeight()"
                 (ionSlideWillChange)="slideChanged()"
                 [options]="slideOpts"
                 #contentSlides>

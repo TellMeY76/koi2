@@ -1,3 +1,9 @@
+.report-fixed-height {
+  height: -webkit-fill-available;
+  padding-bottom: 1em;
+  overflow: scroll;
+}
+
 .report-detail-container {
   display: flex;
   flex-direction: column;
