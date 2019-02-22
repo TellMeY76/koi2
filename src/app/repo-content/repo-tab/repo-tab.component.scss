@@ -83,7 +83,7 @@
 }
 
 .report-detail-card-content p, li {
-  font-size: 14px ;
+  font-size: 14px;
   color: #333;
   line-height: 1.7;
 }
@@ -125,6 +125,12 @@
 
   &:before {
     content: '(';
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .detail-title-name {
+    font-size: 1.1em;
   }
 }
 

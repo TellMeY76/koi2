@@ -2,10 +2,6 @@
   background: #fff;
 }
 
-.report-tab-btn {
-
-}
-
 .report-slides {
   display: flex;
   flex-direction: row;
@@ -15,4 +11,11 @@
   }
 }
 
-
+@media screen and (max-width: 320px) {
+  .report-tab-btns {
+    .report-tab-btn {
+      max-width: 5.75em;
+      min-width: 5.75em;
+    }
+  }
+}
