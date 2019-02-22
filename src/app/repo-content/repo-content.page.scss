@@ -15,4 +15,11 @@
   }
 }
 
-
+@media screen and (max-width: 320px) {
+  .report-tab-btns {
+    .report-tab-btn {
+      max-width: 5.75em;
+      min-width: 5.75em;
+    }
+  }
+}

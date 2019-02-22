@@ -113,6 +113,10 @@ $fixed-card-margin: 15.5em;
   $consultant-font-size: .7em;
   $font-size-zoom: .8em;
 
+  .notice-card-title {
+    font-size: 1.3em;
+  }
+
   .notice-info-card {
     padding: 0 .4em;
   }
@@ -129,6 +133,10 @@ $fixed-card-margin: 15.5em;
 
   .notice-step {
     padding: .5em 1em;
+
+    p {
+      font-size: 13px;
+    }
   }
 
   .notice-consultant-info p {
