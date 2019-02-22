@@ -47,11 +47,11 @@
                         <div class="action-plan-timeline-content">
                             <div class="timeline-content-row">
                                 <p class="action-plan-item action-plan-item-left">{{scheduleItem.content}}</p>
-                                <p class="action-plan-item action-plan-item-right action-plan-executive">{{scheduleItem.executive}}</p>
+                                <p class="action-plan-item action-plan-item-right"
+                                   [ngClass]="scheduleItem.import ? 'tipImport':' action-plan-executive'">{{scheduleItem.executive}}</p>
                             </div>
                             <div class="timeline-content-row ">
-                                <p class="action-plan-item-left"
-                                   [ngClass]="scheduleItem.import ? 'tipImport':'action-plan-item-tip'">{{scheduleItem.tip}}</p>
+                                <p class="action-plan-item-left action-plan-item-tip">{{scheduleItem.tip}}</p>
                                 <p class="action-plan-date action-plan-item-right">{{scheduleItem.date}}</p>
                             </div>
                         </div>

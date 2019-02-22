@@ -2,12 +2,12 @@ import {Notice} from '../model/notice';
 
 export const NOTICE: Notice = {
     consultant: {
-        name: '王茵',
-        tel: '18858252004',
-        headImg: '../../assets/img/head.png'
+        name: '何叶飞',
+        tel: '13732173849',
+        headImg: '../../assets/img/head.jpg'
     },
-    finished: '名称核准，开办地址',
-    Upcoming: '股东签字',
-    deadline: 'Feb 24, 2019 00:00:00',
+    finished: '基本信息收集',
+    Upcoming: '公司名称核准',
+    deadline: 'Mar 12, 2019 00:00:00',
     tip: {}
 };

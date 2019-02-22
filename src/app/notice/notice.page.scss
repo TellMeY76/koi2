@@ -8,6 +8,10 @@ $font-size-zoom: .98em;
 $fixed-bar-margin: 10em;
 $fixed-card-margin: 14.5em;
 
+.notice-scroll-view{
+  -webkit-overflow-scrolling: auto;
+}
+
 .notice-header {
   position: relative;
   z-index: 99;
