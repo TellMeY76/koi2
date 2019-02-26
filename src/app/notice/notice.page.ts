@@ -10,42 +10,19 @@ import {ImgPopoverComponent} from './img-popover/img-popover.component';
     styleUrls: ['./notice.page.scss'],
 })
 export class NoticePage {
-    finished = false;
     noticeInfo: Notice = NOTICE;
     consultant: Consultant = this.noticeInfo.consultant;
     reDays: number;
     reHours: number;
     reMinutes: number;
     reSecond: number;
-    overTime = false;
     scrollDir = 'default';
     excludeTracks: any;
 
     constructor(public loadingController: LoadingController, public modalController: ModalController) {
-        this.countDown();
     }
 
-    async countDown() {
-        const loading = await this.loadingController.create({
-            spinner: 'dots',
-            message: '正在加载...',
-            mode: 'md',
-            translucent: true
-        });
-        await loading.present();
-        const countDownDate = new Date(this.noticeInfo.deadline).getTime();
-        const now = new Date().getTime();
-        const distance = countDownDate - now;
-        if (distance < 0) {
-            return this.overTime = true;
-        }
-        this.setContDown(countDownDate);
-        this.finished = true;
-        loading.dismiss();
-        setInterval(() => {
-            this.setContDown(countDownDate);
-        }, 1000);
-    }
+
 
     setContDown(countDownDate: number) {
         const now = new Date().getTime();

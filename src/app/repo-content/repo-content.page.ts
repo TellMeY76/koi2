@@ -22,7 +22,6 @@ export class RepoContentPage implements OnInit {
     }
 
     ngOnInit() {
-        this.setHeight();
     }
 
     segmentChanged() {
