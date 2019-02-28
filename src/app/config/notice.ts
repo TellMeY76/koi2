@@ -6,8 +6,8 @@ export const NOTICE: Notice = {
         tel: '13732173849',
         headImg: '../../assets/img/head.jpg'
     },
-    finished: '基本信息收集',
-    Upcoming: '公司名称核准',
-    deadline: 'Mar 12, 2019 00:00:00',
+    finished: '网上申报资料提交',
+    Upcoming: '签署纸质文书资料',
+    deadline: 'Mar 8, 2019 00:00:00',
     tip: {}
 };
