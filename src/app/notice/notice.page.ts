@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
 import {NOTICE} from '../config/notice';
 import {Consultant, Notice} from '../model/notice';
-import {LoadingController} from '@ionic/angular';
+import {LoadingController, ModalController} from '@ionic/angular';
+import {ImgPopoverComponent} from './img-popover/img-popover.component';
 
 @Component({
     selector: 'app-notice',
@@ -19,7 +20,7 @@ export class NoticePage {
     overTime = false;
     scrollDir = 'default';
 
-    constructor(public loadingController: LoadingController) {
+    constructor(public loadingController: LoadingController, public modalController: ModalController) {
         this.countDown();
     }
 
@@ -55,11 +56,22 @@ export class NoticePage {
     }
 
     swipe(event) {
-        if (event.detail.scrollTop > 0) {
-            this.scrollDir = 'down';
-        } else if (event.detail.scrollTop < 50) {
-            this.scrollDir = 'up';
-        }
+        // if (event.detail.scrollTop > 0) {
+        //     this.scrollDir = 'down';
+        // } else if (event.detail.scrollTop < 50) {
+        //     this.scrollDir = 'up';
+        // }
+    }
+
+    async presentModal() {
+        const modal = await this.modalController.create({
+            component: ImgPopoverComponent,
+        });
+        return await modal.present();
+    }
+
+    openImg() {
+        this.presentModal();
     }
 
 }

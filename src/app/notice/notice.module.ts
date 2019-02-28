@@ -6,6 +6,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {IonicModule} from '@ionic/angular';
 
 import {NoticePage} from './notice.page';
+import {ImgPopoverComponent} from './img-popover/img-popover.component';
 
 const routes: Routes = [
     {
@@ -21,7 +22,8 @@ const routes: Routes = [
         IonicModule,
         RouterModule.forChild(routes)
     ],
-    declarations: [NoticePage]
+    entryComponents: [ImgPopoverComponent],
+    declarations: [NoticePage, ImgPopoverComponent]
 })
 export class NoticePageModule {
 }

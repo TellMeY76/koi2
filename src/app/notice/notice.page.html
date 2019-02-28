@@ -3,7 +3,7 @@
              class="notice-scroll-view"
              (ionScroll)='swipe($event)'>
 
-    <ion-card mode="ios" class="notice-header" slot="fixed" [ngClass]="scrollDir === 'down' ? 'notice-fixed-bar' : ''">
+    <ion-card mode="ios" class="notice-header">
         <ion-item *ngIf="consultant" class="notice-consultant-info" href="tel:{{consultant.tel}}" mode="md">
             <ion-avatar class="notice-head-img">
                 <img [src]="consultant.headImg">
@@ -31,20 +31,20 @@
                     <span class="notice-color-waring">已超时</span>
                 </ng-template>
             </p>
+            <p><a (click)="openImg()">点击查看您的电子营业执照 </a></p>
         </ion-card-content>
     </ion-card>
 
     <ion-card mode="ios" class="notice-card"
-              [ngClass]="scrollDir === 'down' ? 'fixed-bar-margin' : 'fixed-card-margin'">
+             >
         <ion-card-header mode="md">
-            <ion-card-title class="notice-card-title" mode="md">请您尽快完成公司签字文件</ion-card-title>
+            <ion-card-title class="notice-card-title" mode="md">请您尽快完成银行开户</ion-card-title>
         </ion-card-header>
         <ion-card-content mode="md">
             <p>目前还需您尽快完成：</p>
-            <p class="notice-card-nextLine">1、务必2月27日全体股东完成签字，并把签字资料回寄给我们，以便我们尽快提交相关资料取得营业执照；</p>
-            <p class="notice-card-nextLine">2、待收到签字资料后，会告知银行开户时间，预计是3月4号-5号样子，请周总提前安排好时间到宁波开户，
-                带上身份证原件，因设及网银，还需带上另外一位股东或者网银负责人的身份证原件；</p>
-            <p class="notice-card-nextLine">3、请尽快确认投资人的信息以便我们尽快准备好增资扩股的资料，争取在3月15日之前完成投资人进钱和变更手续。</p><br>
+            <p class="notice-card-nextLine">1、请周总安排好工作，最晚下周二到宁波开户，带上身份证原件，因涉及网银，还需带上另外一位网银操作人的身份证原件；</p>
+            <p class="notice-card-nextLine">2、账户开通后，我们要进投资款和验资手续，提前准备好投资款；</p>
+            <p class="notice-card-nextLine">3、请尽快确认投资人的信息请尽快确认投资人的信息以便我们尽快准备好增资扩股的资料，争取在3月15日之前完成投资人进钱和变更手续。</p><br>
         </ion-card-content>
     </ion-card>
 
