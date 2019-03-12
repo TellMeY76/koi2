@@ -20,26 +20,19 @@ export class NoticePage {
     scrollDir = 'default';
 
     constructor(public loadingController: LoadingController) {
-        const countDownDate = new Date(this.noticeInfo.deadline).getTime();
-        const now = new Date().getTime();
-        const distance = countDownDate - now;
-        if (distance < 0) {
-            this.overTime = true;
-        }
-        this.setContDown(countDownDate);
-        setInterval(() => {
-            this.setContDown(countDownDate);
-        }, 1000);
+        this.countDown();
     }
 
-    countDown() {
+    async countDown() {
+
         const countDownDate = new Date(this.noticeInfo.deadline).getTime();
         const now = new Date().getTime();
         const distance = countDownDate - now;
         if (distance < 0) {
-            this.overTime = true;
+            return this.overTime = true;
         }
         this.setContDown(countDownDate);
+        this.finished = true;
         setInterval(() => {
             this.setContDown(countDownDate);
         }, 1000);

@@ -41,7 +41,7 @@ $fixed-card-margin: 2em;
 }
 
 .notice-step {
-  padding: .5em 2em;
+  padding: 1em 2em;
   transition: $step-transition;
 }
 
@@ -107,6 +107,7 @@ $fixed-card-margin: 2em;
 
 .notice-card-nextLine {
   text-indent: 2em;
+  line-height: 1.8;
 }
 
 @media screen and (max-width: 320px) {

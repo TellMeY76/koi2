@@ -22,12 +22,21 @@
                 创业顾问建议：
             </div>
             <div class="report-detail-card-content">
-                <p class="report-detail-suggest">{{info.suggest}}</p>
+                <p class="report-detail-suggest" *ngIf="info.suggest">{{info.suggest}}</p>
+                <div *ngIf="info.suggestList">
+                    <p class="report-detail-suggest" style="padding: 0" *ngFor="let su of info.suggestList">{{su}}</p>
+                </div>
                 <p class="content-label" *ngIf="info.weAdvice.label">{{info.weAdvice.label}}</p>
                 <ol class="content-list" *ngIf="info.weAdvice.contents"
                     [ngClass]="info.weAdvice.label?'content-with-label':''">
                     <li *ngFor="let advice of info.weAdvice.contents">{{advice}}</li>
                 </ol>
+                <div *ngIf="info.weAdvice.contentsList">
+                    <div *ngFor="let co of info.weAdvice.contentsList">
+                        <p style="margin:0;text-indent: 2em">{{co.main}}</p>
+                        <p style="margin:0;text-indent: 2em" *ngFor="let coChild of co.children">{{coChild}}</p>
+                    </div>
+                </div>
                 <ol class="content-list" *ngIf="info.weAdvice.wordValues"
                     [ngClass]="info.weAdvice.label?'content-with-label':''">
                     <li *ngFor="let wv of info.weAdvice.wordValues">{{wv.word}}

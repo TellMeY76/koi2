@@ -75,7 +75,7 @@
 }
 
 .report-detail-card-content {
-  padding: 0 1em;
+  padding: 0 1em .6em 1em;
 
   p {
     margin: 1em 0 0 0;
@@ -89,6 +89,8 @@
 }
 
 .report-detail-suggest {
+  padding: 0;
+  margin: 0;
   text-indent: 2em;
   line-height: 1.8 !important;
 }

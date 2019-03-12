@@ -1,8 +1,8 @@
 <ion-content
-             scroll-events="true"
-             >
+        scroll-events="true"
+>
 
-    <ion-card mode="ios" class="notice-header"  [ngClass]="scrollDir === 'down' ? 'notice-fixed-bar' : ''">
+    <ion-card mode="ios" class="notice-header" [ngClass]="scrollDir === 'down' ? 'notice-fixed-bar' : ''">
         <ion-item *ngIf="consultant" class="notice-consultant-info" href="tel:{{consultant.tel}}" mode="md">
             <ion-avatar class="notice-head-img">
                 <img [src]="consultant.headImg">
@@ -17,35 +17,48 @@
         </ion-item>
 
         <ion-card-content class="notice-step" *ngIf="noticeInfo">
-            <p>已完成：{{noticeInfo.finished}}</p>
-            <p class="notice-color-waring">待完成：{{noticeInfo.Upcoming}}</p>
-            <p>距离注册办结：
-                <ng-template ngIf="!overTime;else elseBlock">
-                    <span class="notice-color-waring">{{reDays}}</span> 天
-                    <span class="notice-color-waring">{{reHours}}</span> 小时
-                    <span class="notice-color-waring">{{reMinutes}}</span> 分
-                    <span class="notice-color-waring">{{reSecond}}</span> 秒
-                </ng-template>
-                <ng-template #elseBlock>
-                    <span class="notice-color-waring">已超时</span>
-                </ng-template>
-            </p>
+            <p>正在实施事项：税务落户</p>
+            <!--<p class="notice-color-waring">待完成：{{noticeInfo.Upcoming}}</p>-->
+            <!--<p>距离注册办结：-->
+            <!--<ng-template ngIf="!overTime;else elseBlock">-->
+            <!--<span class="notice-color-waring">{{reDays}}</span> 天-->
+            <!--<span class="notice-color-waring">{{reHours}}</span> 小时-->
+            <!--<span class="notice-color-waring">{{reMinutes}}</span> 分-->
+            <!--<span class="notice-color-waring">{{reSecond}}</span> 秒-->
+            <!--</ng-template>-->
+            <!--<ng-template #elseBlock>-->
+            <!--<span class="notice-color-waring">已超时</span>-->
+            <!--</ng-template>-->
+            <!--</p>-->
         </ion-card-content>
     </ion-card>
 
     <ion-card mode="ios" class="notice-card"
               [ngClass]="scrollDir === 'down' ? 'fixed-bar-margin' : 'fixed-card-margin'">
         <ion-card-header mode="md">
-            <ion-card-title class="notice-card-title" mode="md">请您尽快完成股东签字</ion-card-title>
+            <ion-card-title class="notice-card-title" mode="md">很荣幸，成为您的专属顾问</ion-card-title>
         </ion-card-header>
         <ion-card-content mode="md">
-            <p>尊敬的周总：</p>
-            <p class="notice-card-nextLine">恭喜您！目前您只需完成股东签字就可正式
-                领取营业执照啦！请您完成以下操作：</p>
-            <p class="notice-card-nextLine"> 1.下载"浙里办"APP</p>
-            <p class="notice-card-nextLine">2.完成注册，并通过支付宝完成实名认证</p>
-            <p class="notice-card-nextLine">3.搜索"工商业务办理"，点击"电子签章"</p>
-            <p class="notice-card-nextLine"> 4.完成签名</p>
+            <p>尊敬的竺总：</p>
+            <p class="notice-card-nextLine">很荣幸成为您的专属顾问！服务期间，如有政策咨询、财税咨询、项目申报、知识产权申请等创业服务相关问题都可向我咨询，预祝合作愉快。</p>
+
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card mode="ios" class="notice-card"
+              [ngClass]="scrollDir === 'down' ? 'fixed-bar-margin' : 'fixed-card-margin'">
+        <ion-card-content mode="md">
+            <p style="font-size: .9em;line-height: 1.8;">根据您的运营规划，我们为您组建了如下易创小分队：</p>
+            <p style="font-size: .9em;line-height: 1.8;" class="notice-card-nextLine">政策咨询：王茵
+                <a href="tel:18858252004">18858252004</a>
+            </p>
+            <p style="font-size: .9em;line-height: 1.8;" class="notice-card-nextLine">财税服务：谢会计
+                <a href="tel:13157477669">13157477669</a>
+            </p>
+            <p style="font-size: .9em;line-height: 1.8;" class="notice-card-nextLine">项目申报及知识产权服务：吴老师
+                <a href="tel:13967809004">13967809004</a>
+            </p>
+            <p style="font-size: .9em;line-height: 1.8;" class="notice-card-nextLine">欢迎随时咨询了解！</p>
         </ion-card-content>
     </ion-card>
 

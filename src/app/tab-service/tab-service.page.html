@@ -29,7 +29,38 @@
                 <p>账本费：150元/年</p>
             </div>
         </div>
-
+        <div class="report-detail-card">
+            <div class="report-detail-card-title">
+                其他推荐方案：
+            </div>
+            <div class="report-service report-detail-card-content" *ngFor="let other of anotherPlans">
+                <div class="service-view">
+                    <div class="service-container">
+                        <h3>{{other.name}}</h3>
+                        <div class="service-range">
+                            <h4>服务范围：</h4>
+                            <div class="package-service-items">
+                                <p *ngFor="let range of other.ranges">{{range}}</p>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h4>服务内容：</h4>
+                            <div class="package-service-items">
+                                <p *ngFor="let content of other.contents">{{content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-worth">
+                        <span class="package-price-label">服务价值：</span><span
+                            class="package-price">￥{{other['worth']}}</span>
+                    </div>
+                    <div class="package-worth">
+                        <span class="package-price-label">套餐价：</span><span class="package-price">￥{{other['sell'] / 12}}
+                        /月</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button href="tel:18858252004">

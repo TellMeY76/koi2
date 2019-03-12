@@ -7,18 +7,22 @@ export const REPO_DETAILS: RepoDetail[] = [
         statusLabel: '注册基本信息',
         status: ['公司名称：宁波鸿朗环保科技有限公司', '公司性质:有限公司', '注册地址：宁波 高新区 浙大科技园',
             '注册资本：100万元', '.行业类型：科技型，环保技术'],
-        suggest: '根据我们的沟通，我们已知悉您近期有变更成一人有限公司计划，但我们必须提醒您，一人有限责任公司有潜藏的法律风险，那就是股东需要对公司债务承担连带清偿责任。因此我们建议',
+        suggest: '根据我们的沟通，我们已知悉您近期有变更成一人有限公司计划，为此我们作如下建议：',
         weAdvice: {
             label: '',
-            contents: ['完成股权转让的同时，设立公司监事']
+            contents: null,
+            contentsList: [{
+                main: '1、二人有限公司与一人有限存在巨大差异，您务必知悉：',
+                children: ['二人有限公司股东对其认缴出资额承担有限责任；', '一人有限责任公司因公司财产与个人财产不能明确区分，可能对公司债务承担连带清偿责任']
+            }, {main: '2、股权变更同时，变更您在公司的监事职务。', children: []}]
         }
     },
     {
         name: '政策匹配及准备工作', icon: 'filing',
         description: '易创，让政策申请更容易！',
         statusLabel: '基本信息',
-        status: ['法人户籍：宁波', '人员结构：本科1人，硕士1人（计划引进）', '创业类型：科技型，环保技术', '所属园区：浙大科技园', '知识产权：计划申请发明专利1-2项'],
-        suggest: '宁波市为鼓励大众创业，万众创新，对于初创的中小企业制定了一系列普惠性政策。根据您的需求与现状，我们为您匹配了以下创业政策',
+        status: ['法人户籍：宁波', '创业类型：科技型，环保技术', '所属园区：浙大科技园', '知识产权：计划申请发明专利1-2项'],
+        suggest: '宁波市为鼓励大众创业，万众创新，对于初创的中小企业制定了一系列普惠性政策。根据您的需求与现状，我们为您匹配了以下创业政策:',
         weAdvice: {
             label: '',
             wordValues: [{word: '创业带动就业补贴', value: '最高10万元'}, {word: '招用高校毕业生社保补贴', value: '每人每月770元'},
@@ -32,7 +36,7 @@ export const REPO_DETAILS: RepoDetail[] = [
         description: '易创，让融资贷款更容易！',
         statusLabel: '基本信息',
         status: ['创业类型：科技型，环保技术', '是否引入外部投资者：-'],
-        suggest: '本公司暂无融资计划',
+        suggest: '本公司目前暂无融资计划',
         weAdvice: {
             label: '',
             contents: []
@@ -43,9 +47,11 @@ export const REPO_DETAILS: RepoDetail[] = [
         description: '易创，让财税筹划更容易！',
         statusLabel: '基本信息',
         status: ['创业类型：科技型，环保技术', '注册地址：宁波 高新区 浙大科技园', '税务资格：小规模纳税人', '税种行业：服务'],
-        suggest: `小规模纳税人好处多多，增值税、所得税的特殊优待可一定要用好:1.月销售额在10万元以下（或季度30万元以下）享受增值税免征政策；2.小型微利企
-    业，利润100万以下所得税减按5%，100万-300万减按10%。不过，就算超过销售限额，增值税税点也只有3%，但也请密切关注，因为年销售额超过500万元就要强制
-    认定为一般纳税人了，到时候可是16%的税点，如果成本费用可抵扣项不多，这个纳税金额还是挺惊人的！因此我们建议:`,
+        suggestList: ['小规模纳税人好处多多，增值税、所得税的特殊优待可一定要用好:', '1.月销售额在10万元以下（或季度30万元以下）' +
+        '享受增值税免征政策；', '2.小型微利企业，利润100万以下所得税减按5%，100万-300万减按10%。', '不过，就算超过销售限额，增值税税点也只有3%，' +
+        '但也请密切关注，因为年销售额超过500万元就要强制认定为一般纳税人了，到时候可是16%的税点，如果成本费用可抵扣项不多，这个纳税金额还是挺惊人的！' +
+        '因此我们建议:'],
+        suggest: '',
         weAdvice: {
             label: '',
             contents: ['规范列支研发费用，加计扣除也可降低税收成本；', '提前做好销售预判，避免不必要税金产生']
@@ -56,20 +62,26 @@ export const SCHEDULES = [
     {
         title: '注册方案 & 股权架构设计',
         schedule: [
-            {content: '股权转让', tip: '', date: '2019.4.25', executive: '易创注册部 陈瑜波', complete: 'false'},
+            {content: '股权转让书、公司新章程、决议编制 ', tip: '', date: '2019.4.2', executive: '易创注册部 陈瑜波', complete: 'false'},
+            {content: '股权转让书、公司新章程、决议签字', tip: '', date: '2019.4.15', executive: ' 企业负责人', complete: 'false'},
+            {content: '税务局完税证明开具', tip: '', date: '2019.4.17', executive: '易创注册部 陈瑜波', complete: 'false'},
+            {content: '工商股权变更材料提交', tip: '', date: '2019.4.19', executive: '易创注册部 陈瑜波', complete: 'false'},
+            {content: '领取新营业执照', tip: '', date: '2019.4.25', executive: '易创注册部 陈瑜波', complete: 'false'},
+            {content: '银行公司信息变更', tip: '', date: '2019.4.27', executive: '易创注册部 陈瑜波', complete: 'false'},
+            {content: '税务局公司信息变更', tip: '', date: '2019.4.28', executive: '易创注册部 陈瑜波', complete: 'false'},
         ]
     },
     {
         title: '政策匹配',
         schedule: [
-            {content: '科技型企业认定', tip: '园区退税翻倍', date: '2019', executive: '易创顾问 齐培培', complete: 'false'},
-            {content: '优质型企业备案', tip: '最高50万奖励', date: '2019', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019', executive: '企业负责人', complete: 'false'},
-            {content: '知识产权申请', tip: '科技型项目申报的前提', date: ' 2019', executive: '易创知产 沈佳璐', complete: 'false'},
-            {content: '撰写可行性分析报告', tip: '为后续项目申报打好文件基础', date: '2019', executive: '企业负责人', complete: 'false'},
-            {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '研发费用补贴申请', tip: '最高不超过支出额的5%给予补助', date: '2019', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '宁波科技大市场平台会员注册', tip: '产学研申报的前提', date: '2019', executive: '易创申报 吴磊敏', complete: 'false'},
+            {content: '科技型企业认定(未订购)', tip: '园区退税翻倍', date: '2019.4.1', executive: '易创顾问 齐培培', complete: 'false'},
+            {content: '优质型企业备案(未订购)', tip: '最高50万奖励', date: '2019.4.1', executive: '易创申报 吴磊敏', complete: 'false'},
+            {content: '创新券网站注册备案(未订购)', tip: '财务费用减免5000', date: '2019.5.1', executive: '企业负责人', complete: 'false'},
+            {content: '知识产权申请(未订购)', tip: '科技型项目申报的前提', date: ' 2019.5.1', executive: '易创知产 沈佳璐', complete: 'false'},
+            {content: '撰写可行性分析报告(未订购)', tip: '为后续项目申报打好文件基础', date: '2019.6.1', executive: '企业负责人', complete: 'false'},
+            {content: '创新型初创企业备案(未订购)', tip: '申报智团项目必备', date: '2019.7.1', executive: '易创申报 吴磊敏', complete: 'false'},
+            {content: '研发费用补贴申请(未订购)', tip: '最高不超过支出额的5%给予补助', date: '2019.9.1', executive: '易创申报 吴磊敏', complete: 'false'},
+            {content: '宁波科技大市场平台会员注册(未订购)', tip: '产学研申报的前提', date: '2019.10.1', executive: '易创申报 吴磊敏', complete: 'false'},
         ]
     },
     {

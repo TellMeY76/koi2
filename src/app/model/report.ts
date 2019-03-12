@@ -15,6 +15,7 @@ export class RepoDetail {
     description: string;
     status: string[];
     suggest: string;
+    suggestList?: string[];
     statusLabel: string;
     weAdvice: WeAdvice;
 }
@@ -27,6 +28,7 @@ export class WordValues {
 export class WeAdvice {
     label: string;
     contents?: string[];
+    contentsList?: any[];
     wordValues?: WordValues[];
 }
 
