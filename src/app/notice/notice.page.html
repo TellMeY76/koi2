@@ -1,8 +1,8 @@
-<ion-content *ngIf="finished"
+<ion-content
              scroll-events="true"
-             (ionScroll)='swipe($event)'>
+             >
 
-    <ion-card mode="ios" class="notice-header" slot="fixed" [ngClass]="scrollDir === 'down' ? 'notice-fixed-bar' : ''">
+    <ion-card mode="ios" class="notice-header"  [ngClass]="scrollDir === 'down' ? 'notice-fixed-bar' : ''">
         <ion-item *ngIf="consultant" class="notice-consultant-info" href="tel:{{consultant.tel}}" mode="md">
             <ion-avatar class="notice-head-img">
                 <img [src]="consultant.headImg">
@@ -35,21 +35,6 @@
 
     <ion-card mode="ios" class="notice-card"
               [ngClass]="scrollDir === 'down' ? 'fixed-bar-margin' : 'fixed-card-margin'">
-        <ion-card-header mode="md">
-            <ion-card-title class="notice-card-title" mode="md">请您尽快完成股东签字</ion-card-title>
-        </ion-card-header>
-        <ion-card-content mode="md">
-            <p>尊敬的周总：</p>
-            <p class="notice-card-nextLine">恭喜您！目前您只需完成股东签字就可正式
-                领取营业执照啦！请您完成以下操作：</p>
-            <p class="notice-card-nextLine"> 1.下载"浙里办"APP</p>
-            <p class="notice-card-nextLine">2.完成注册，并通过支付宝完成实名认证</p>
-            <p class="notice-card-nextLine">3.搜索"工商业务办理"，点击"电子签章"</p>
-            <p class="notice-card-nextLine"> 4.完成签名</p>
-        </ion-card-content>
-    </ion-card>
-
-    <ion-card mode="ios">
         <ion-card-header mode="md">
             <ion-card-title class="notice-card-title" mode="md">请您尽快完成股东签字</ion-card-title>
         </ion-card-header>

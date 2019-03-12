@@ -20,26 +20,26 @@ export class NoticePage {
     scrollDir = 'default';
 
     constructor(public loadingController: LoadingController) {
-        this.countDown();
-    }
-
-    async countDown() {
-        const loading = await this.loadingController.create({
-            spinner: 'dots',
-            message: '正在加载...',
-            mode: 'md',
-            translucent: true
-        });
-        await loading.present();
         const countDownDate = new Date(this.noticeInfo.deadline).getTime();
         const now = new Date().getTime();
         const distance = countDownDate - now;
         if (distance < 0) {
-            return this.overTime = true;
+            this.overTime = true;
         }
         this.setContDown(countDownDate);
-        this.finished = true;
-        loading.dismiss();
+        setInterval(() => {
+            this.setContDown(countDownDate);
+        }, 1000);
+    }
+
+    countDown() {
+        const countDownDate = new Date(this.noticeInfo.deadline).getTime();
+        const now = new Date().getTime();
+        const distance = countDownDate - now;
+        if (distance < 0) {
+            this.overTime = true;
+        }
+        this.setContDown(countDownDate);
         setInterval(() => {
             this.setContDown(countDownDate);
         }, 1000);
