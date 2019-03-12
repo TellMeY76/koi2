@@ -1,6 +1,6 @@
 <ion-content
-             scroll-events="true"
-             (ionScroll)='swipe($event)'>
+        scroll-events="true"
+        (ionScroll)='swipe($event)'>
 
     <ion-card mode="ios" class="notice-header">
         <ion-item *ngIf="consultant" class="notice-consultant-info" href="tel:{{consultant.tel}}" mode="md">
@@ -17,30 +17,52 @@
         </ion-item>
 
         <ion-card-content class="notice-step" *ngIf="noticeInfo">
-            <p>激动！您的营业执照已下发！</p>
-            <p>下发时间：2019.02.21</p>
+            <p>您的注册事项已全部办结！</p>
+            <p>办结时间：2019.03.05</p>
             <p>比预估时间提前：
                 <span class="notice-color-waring">2</span> 天
                 <span class="notice-color-waring">3</span> 小时
                 <span class="notice-color-waring">26</span> 分
             </p>
-            <p><a (click)="openImg()">点击查看您的电子营业执照 </a></p>
         </ion-card-content>
     </ion-card>
 
     <ion-card mode="ios" class="notice-card">
         <ion-card-header mode="md">
-            <ion-card-title class="notice-card-title" mode="md">下一步：银行开户、税务备案</ion-card-title>
+            <ion-card-title class="notice-card-title" mode="md">下一步：增资扩股，完成投资人引入</ion-card-title>
         </ion-card-header>
 
         <ion-card-content mode="md">
-            <p>事项提醒：</p>
-            <p class="notice-card-nextLine"> 1.银行开户需要3个工作日，请告知您的空闲时间，方便预约您到场办理。</p>
-            <p class="notice-card-nextLine">2.银行网银开通，需要提供2人身份证原件，请提前准备。</p>
-            <p class="notice-card-nextLine">3.税务备案完成方可开具发票，请提前做好销售预估，方便申请发票额度。</p><br>
-            <p class="notice-card-nextLine">已预约银行：招商银行会展中心支行，客户经理：许丹，联系方式：13586686213</p>
-
+            <p>请尽快确认投资人（张海峰）投资意向。</p>
         </ion-card-content>
+
     </ion-card>
+
+    <ion-card mode="ios" class="notice-card">
+
+        <ion-card-content mode="md">
+            <p>本项服务您需付费：</p>
+            <p>1.注册服务费：<s>500元</s>（给您免费）</p>
+            <p>2.刻章费：680元</p>
+            <p style="text-align: end;">合计收费：680元</p>
+            <p>支付方式:</p>
+            <p>1.银行汇款</p>
+            <table class="notice-table">
+                <tr>
+                    <td>户名：李科科</td>
+                </tr>
+                <tr>
+                    <td>卡号：6228 4803 1054 5298 013</td>
+                </tr>
+                <tr>
+                    <td>开户行：中国农业银行宁波高新区支行</td>
+                </tr>
+            </table>
+            <p>2.长按二维码完成支付</p>
+            <img class="pay-qrCode" src="../../assets/img/wechat-pay.png">
+        </ion-card-content>
+
+    </ion-card>
+
 
 </ion-content>

@@ -103,10 +103,24 @@ $fixed-card-margin: 15.5em;
 .notice-card-title {
   text-align: center;
   color: #f25454;
+  font-size: 1.3em;
 }
 
 .notice-card-nextLine {
   text-indent: 2em;
+}
+
+.notice-table {
+  width: 100%;
+
+  td {
+  }
+}
+
+.pay-qrCode {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
 @media screen and (max-width: 320px) {
@@ -114,7 +128,7 @@ $fixed-card-margin: 15.5em;
   $font-size-zoom: .8em;
 
   .notice-card-title {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .notice-info-card {
