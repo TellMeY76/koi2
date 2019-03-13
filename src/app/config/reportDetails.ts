@@ -2,10 +2,10 @@ import {RepoDetail} from '../model/report';
 
 export const REPO_DETAILS: RepoDetail[] = [
     {
-        name: '注册方案及股权架构设计', icon: 'business',
+        name: '股权架构设计', icon: 'business',
         description: '易创，让注册公司更容易！',
         statusLabel: '注册基本信息',
-        status: ['公司名称：宁波鸿朗环保科技有限公司', '公司性质:有限公司', '注册地址：宁波 高新区 浙大科技园',
+        status: ['公司名称：宁波鸿朗环保科技有限公司', '公司性质：有限公司', '注册地址：宁波 高新区 浙大科技园',
             '注册资本：100万元', '.行业类型：科技型，环保技术'],
         suggest: '根据我们的沟通，我们已知悉您近期有变更成一人有限公司计划，为此我们作如下建议：',
         weAdvice: {
@@ -60,7 +60,7 @@ export const REPO_DETAILS: RepoDetail[] = [
 ];
 export const SCHEDULES = [
     {
-        title: '注册方案 & 股权架构设计',
+        title: '股改方案 & 股权架构设计',
         schedule: [
             {content: '股权转让书、公司新章程、决议编制 ', tip: '', date: '2019.4.2', executive: '易创注册部 陈瑜波', complete: 'false'},
             {content: '股权转让书、公司新章程、决议签字', tip: '', date: '2019.4.15', executive: ' 企业负责人', complete: 'false'},
@@ -74,14 +74,14 @@ export const SCHEDULES = [
     {
         title: '政策匹配',
         schedule: [
-            {content: '科技型企业认定(未订购)', tip: '园区退税翻倍', date: '2019.4.1', executive: '易创顾问 齐培培', complete: 'false'},
-            {content: '优质型企业备案(未订购)', tip: '最高50万奖励', date: '2019.4.1', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '创新券网站注册备案(未订购)', tip: '财务费用减免5000', date: '2019.5.1', executive: '企业负责人', complete: 'false'},
-            {content: '知识产权申请(未订购)', tip: '科技型项目申报的前提', date: ' 2019.5.1', executive: '易创知产 沈佳璐', complete: 'false'},
-            {content: '撰写可行性分析报告(未订购)', tip: '为后续项目申报打好文件基础', date: '2019.6.1', executive: '企业负责人', complete: 'false'},
-            {content: '创新型初创企业备案(未订购)', tip: '申报智团项目必备', date: '2019.7.1', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '研发费用补贴申请(未订购)', tip: '最高不超过支出额的5%给予补助', date: '2019.9.1', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '宁波科技大市场平台会员注册(未订购)', tip: '产学研申报的前提', date: '2019.10.1', executive: '易创申报 吴磊敏', complete: 'false'},
+            {content: '科技型企业认定(未订购)', tip: '园区退税翻倍', date: '2019.4.1', executive: '订购', complete: 'false'},
+            {content: '优质型企业备案(未订购)', tip: '最高50万奖励', date: '2019.4.1', executive: '订购', complete: 'false'},
+            {content: '创新券网站注册备案(未订购)', tip: '财务费用减免5000', date: '2019.5.1', executive: '订购', complete: 'false'},
+            {content: '知识产权申请(未订购)', tip: '科技型项目申报的前提', date: ' 2019.5.1', executive: '订购', complete: 'false'},
+            {content: '撰写可行性分析报告(未订购)', tip: '为后续项目申报打好文件基础', date: '2019.6.1', executive: '订购', complete: 'false'},
+            {content: '创新型初创企业备案(未订购)', tip: '申报智团项目必备', date: '2019.7.1', executive: '订购', complete: 'false'},
+            {content: '研发费用补贴申请(未订购)', tip: '最高不超过支出额的5%给予补助', date: '2019.9.1', executive: '订购', complete: 'false'},
+            {content: '宁波科技大市场平台会员注册(未订购)', tip: '产学研申报的前提', date: '2019.10.1', executive: '订购', complete: 'false'},
         ]
     },
     {
