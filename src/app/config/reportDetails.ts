@@ -13,7 +13,7 @@ export const REPO_DETAILS: RepoDetail[] = [
             label: '',
             contents: ['资本引才政策要求资本金到位的同时在工商信用网上查到投资方的股权信息，因此建议能在3月15日之前完成增资扩股手续更为稳妥；',
                 '经易创测算，注册及增资扩股手续顺利完成最快时间需要17个工作日，我们只有通过提前准备并签署下一次变更需要的文件来缩短办理时间。但部分文件会做空白时间或者空白标题处理；',
-            '公司主营业务为生物医药产品的研发生产销售，但生物医药生产销售需要经食药监部门前置审批后才能注册，一般办理时间在30个工作日以上，因此建议本次注册时，经营范围只写“生物技术研发。这样才可绕开审批，等以后再慢慢变更经营范围。']
+                '公司主营业务为生物医药产品的研发生产销售，但生物医药生产销售需要经食药监部门前置审批后才能注册，一般办理时间在30个工作日以上，因此建议本次注册时，经营范围只写“生物技术研发。这样才可绕开审批，等以后再慢慢变更经营范围。']
         }
     },
     {
@@ -104,13 +104,13 @@ export const SCHEDULES = [
     {
         title: '财税计划',
         schedule: [
-            {content: '检查企业汽车租赁有无续', tip: '规避发票不合理入账风险 ', date: '2019.3.15', executive: '易创顾问部 何叶飞', complete: 'false'},
+            {content: '检查企业汽车租赁有无续租', tip: '规避发票不合理入账风险 ', date: '2019.3.15', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '小规模纳税人2季度税收筹划 ', tip: '避免多交增值税 ', date: '2019.3.20', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '2季度企业所得税预估及筹划 ', tip: '避免多交所得税 ', date: '2019.3.20', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '完成员工信息采集表填写 ', tip: '为政策享受、研发费用做准备 ', date: '2019.4.1', executive: '企业负责人', complete: 'false'},
             {content: '完成研发项目立项计划表填写 ', tip: '为政策享受、研发费用做准备 ', date: '2019.4.1', executive: '企业负责人', complete: 'false'},
             {content: '出具政策享受评估报告 ', tip: '符合条件，可享受2000元/人补贴', date: '2019.4.2', executive: '易创顾问部 何叶飞', complete: 'false'},
-            {content: '设置研发费用台账，便于加计扣除及研发补贴申请 ', tip: '10万研发费用节税2万', date: '2019.4.17', executive: '易创顾问部 何叶飞', complete: 'false'},
+            {content: '设置研发费用台账，便于加计扣除及研发补贴申请 ', tip: '10万研发费用节税3万', date: '2019.4.17', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '业务招待费、广宣费、三项经费税前扣除比例核算，进行所得税税收筹划 ', date: '2019.4.20', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '核对往来款，理清应收及欠款', tip: '防止企业资产流失 ', date: '2019.5.5', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '测算企业半年度税负率是否达标', tip: '规避企业涉税风险 ', date: '2019.5.13', executive: '易创顾问部 何叶飞', complete: 'false'},
@@ -118,7 +118,7 @@ export const SCHEDULES = [
             {content: '预估年度所得税，修订当年税筹方案', tip: '所得税第一次预估 ', date: '2019.7.18', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '核对是否欠税', tip: '规避税务稽查风险 ', date: '2019.8.4', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '业务招待费、广宣费、三项经费税前扣除比例核算，进行所得税税收筹划 ', date: '2019.9.19', executive: '易创顾问部 何叶飞', complete: 'false'},
-            {content: '对比税收与同区退税起征点', tip: '筹划放弃退税还是享受退税有利', date: '2019.10.23', executive: '易创顾问部 何叶飞', complete: 'false'},
+            {content: '对比税收与园区退税起征点', tip: '筹划放弃退税还是享受退税有利', date: '2019.10.23', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '检测注册资本金到位，到位后及时汇报并缴纳印花税', date: '2019.11.12', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '测算企业年度税负率是否达标', tip: '规避企业涉税风险', date: '2019.11.20', executive: '易创顾问部 何叶飞', complete: 'false'},
             {content: '预估年度所得税，修订当年税筹方案', tip: '所得税第二次预估', date: '2019.12.1', executive: '易创顾问部 何叶飞', complete: 'false'},
