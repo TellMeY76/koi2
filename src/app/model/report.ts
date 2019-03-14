@@ -38,7 +38,7 @@ export class RepoSchedule {
 export class ScheduleItem {
   content: string;
   date: string;
-  tip: string;
+  tip?: string;
   executive: string;
   import?: boolean;
   complete: string;
