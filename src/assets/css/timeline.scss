@@ -49,28 +49,28 @@
   width: 10px;
   height: 10px;
 
-  ion-icon{
+  ion-icon {
     display: none;
     color: #67C23A;
     position: absolute;
     left: -3px;
     top: -2px;
     background: #fff;
-    }
+  }
 }
 
-.itemCompleted{
-  ion-icon{
+.itemCompleted {
+  ion-icon {
     display: block;
-    }
+  }
 }
 
-.itemNormal{
+.itemNormal {
   background: #a3bed3;
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 
-  ion-icon{
+  ion-icon {
     display: none;
   }
 }
@@ -119,11 +119,11 @@
 }
 
 .action-plan-item-left {
-  width: 58%;
+  width: 70%;
 }
 
 .action-plan-item-right {
-  width: 42%;
+  width: 30%;
   font-size: 12px !important;
   text-align: right;
 }
