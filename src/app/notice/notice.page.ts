@@ -24,13 +24,6 @@ export class NoticePage {
     }
 
     async countDown() {
-        const loading = await this.loadingController.create({
-            spinner: 'dots',
-            message: '正在加载...',
-            mode: 'md',
-            translucent: true
-        });
-        await loading.present();
         const countDownDate = new Date(this.noticeInfo.deadline).getTime();
         const now = new Date().getTime();
         const distance = countDownDate - now;
@@ -39,7 +32,6 @@ export class NoticePage {
         }
         this.setContDown(countDownDate);
         this.finished = true;
-        loading.dismiss();
         setInterval(() => {
             this.setContDown(countDownDate);
         }, 1000);

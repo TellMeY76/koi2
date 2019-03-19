@@ -1,7 +1,7 @@
-<ion-content *ngIf="finished"
-             scroll-events="true"
-             class="notice-scroll-view"
-             (ionScroll)='swipe($event)'>
+<ion-content
+        scroll-events="true"
+        class="notice-scroll-view"
+        (ionScroll)='swipe($event)'>
 
     <ion-card mode="ios" class="notice-header" slot="fixed" [ngClass]="scrollDir === 'down' ? 'notice-fixed-bar' : ''">
         <ion-item *ngIf="consultant" class="notice-consultant-info" href="tel:{{consultant.tel}}" mode="md">
