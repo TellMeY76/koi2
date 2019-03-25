@@ -23,13 +23,14 @@ export class NoticePage {
         this.countDown();
     }
 
-    async countDown() {
+    countDown() {
         const countDownDate = new Date(this.noticeInfo.deadline).getTime();
         const now = new Date().getTime();
         const distance = countDownDate - now;
         if (distance < 0) {
             return this.overTime = true;
         }
+        console.log(distance);
         this.setContDown(countDownDate);
         this.finished = true;
         setInterval(() => {

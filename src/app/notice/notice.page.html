@@ -20,17 +20,15 @@
         <ion-card-content class="notice-step" *ngIf="noticeInfo">
             <p>已完成：{{noticeInfo.finished}}</p>
             <p class="notice-color-waring">待完成：{{noticeInfo.Upcoming}}</p>
-            <p>距离注册办结：
-                <ng-template ngIf="!overTime;else elseBlock">
+            <ng-template [ngIf]="!overTime" [ngIfElse]="elseBlock">
+                <p>距离注册办结：
                     <span class="notice-color-waring">{{reDays}}</span> 天
                     <span class="notice-color-waring">{{reHours}}</span> 小时
                     <span class="notice-color-waring">{{reMinutes}}</span> 分
                     <span class="notice-color-waring">{{reSecond}}</span> 秒
-                </ng-template>
-                <ng-template #elseBlock>
-                    <span class="notice-color-waring">已超时</span>
-                </ng-template>
-            </p>
+                </p>
+            </ng-template>
+
         </ion-card-content>
     </ion-card>
 

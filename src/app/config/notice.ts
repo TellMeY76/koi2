@@ -8,6 +8,6 @@ export const NOTICE: Notice = {
     },
     finished: '网上申报资料提交',
     Upcoming: '签署纸质文书资料',
-    deadline: 'Mar 8, 2019 00:00:00',
+    deadline: 'Mar 25, 2019 00:00:00',
     tip: {}
 };
