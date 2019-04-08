@@ -92,6 +92,7 @@
   font-size: 14px;
   color: #333;
   line-height: 1.7;
+  white-space: pre-wrap;
 }
 
 .report-detail-suggest {
@@ -105,8 +106,8 @@
 }
 
 .content-list {
+  margin: 0;
   padding-left: 2em;
-  margin: 0 0 1em 0;
 }
 
 .content-with-label {

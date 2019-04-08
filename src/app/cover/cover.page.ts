@@ -14,7 +14,7 @@ export class CoverPage implements OnInit {
 
     ngOnInit() {
         const date = new Date();
-        this.dateNow = `${date.getFullYear()}.${date.getMonth() + 1}.${date.getDate()}`;
+        this.dateNow = `2019.03.29`;
     }
 
     toIndex() {

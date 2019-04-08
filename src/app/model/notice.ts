@@ -1,7 +1,7 @@
 export class Notice {
     consultant: Consultant;
-    finished: string;
-    Upcoming: string;
+    finished: string[];
+    Upcoming: string[];
     deadline: string;
     tip: any;
 }

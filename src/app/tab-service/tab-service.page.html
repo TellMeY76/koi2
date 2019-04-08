@@ -11,18 +11,8 @@
         </div>
 
         <div class="report-detail-card">
-            <div class="report-detail-card-content">
-                <p class="service-program-description">
-                    根据我们之前的沟通，我们公司除了有申报项目享受政策补贴的计划之外，还有申请高新技术企业的计划。
-                    而认定高新技术企业除了知识产权数量、科技人员占比达到要求之外，更需要研发项目单列台账、研发费用占比及高新技术产品
-                    （收入）占比达到规定标准，此外，还需两年研发费用加计扣除，基于以上综合考虑，我们为您推荐如下最优方案：
-                </p>
-            </div>
-        </div>
-
-        <div class="report-detail-card">
             <div class="report-detail-card-title">
-                最优方案：
+                已购套餐：
             </div>
             <div class="report-service report-detail-card-content">
                 <div class="service-view">
@@ -53,41 +43,35 @@
                 </div>
             </div>
         </div>
-        <div class="report-detail-card">
-            <div class="report-detail-card-title">
-                其他推荐方案：
+        <div class="report-detail-card report-detail-card-others">
+            <div class="report-detail-card-title ">
+                其他推荐服务：
             </div>
-            <div class="report-service report-detail-card-content" *ngFor="let other of anotherPlans">
-                <div class="service-view">
-                    <div class="service-container">
-                        <h3>{{other.name}}</h3>
-                        <div class="service-range">
-                            <h4>服务范围：</h4>
-                            <div class="package-service-items">
-                                <p *ngFor="let range of other.ranges">{{range}}</p>
-                            </div>
-                        </div>
-                        <div class="service-content">
-                            <h4>服务内容：</h4>
-                            <div class="package-service-items">
-                                <p *ngFor="let content of other.contents">{{content}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="package-worth">
-                        <span class="package-price-label">服务价值：</span><span
-                            class="package-price">￥{{other['worth']}}</span>
-                    </div>
-                    <div class="package-worth">
-                        <span class="package-price-label">套餐价：</span><span class="package-price">￥{{other['sell'] / 12}}
-                        /月</span>
-                    </div>
-                </div>
+            <div class="report-service report-detail-card-content report-detail-card-list">
+                <h5>知识产权申请</h5>
+                <p>发明专利 <span>7950</span>元(服务费+官费)</p>
+                <p>实用新型 <span>3500</span>元(服务费+官费)</p>
+                <p>外观专利 <span>2000</span>元(服务费+官费)</p>
+                <p>境内商标 <span>1100</span>元(服务费+官费)</p>
+                <p>商标转让 <span>1300</span>元(服务费+官费)</p>
+                <p>计算机软件著作权 <span>800</span>元(服务费+官费)</p>
+            </div>
+            <div class="report-service report-detail-card-content report-detail-card-list">
+                <h5>人力资源服务</h5>
+                <span class="report-service-label">人事代理服务：</span>
+                <p>代发薪资 <span>60</span>元/人/月/次</p>
+                <p>代缴社保<span>19.9</span>元/人/月/次</p>
+                <span class="report-service-label">劳务外包服务：</span>
+                <p>社保筹划 <span>60</span>元/人/月/次起</p>
+            </div>
+            <div class="report-service report-detail-card-content">
+                <h5>钉钉专家上门部署 <span style="color: red">免费</span></h5>
             </div>
         </div>
+
     </div>
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-        <ion-fab-button href="tel:13732173849">
+        <ion-fab-button href="tel:15906580526">
             <ion-icon name="call"></ion-icon>
         </ion-fab-button>
     </ion-fab>

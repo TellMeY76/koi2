@@ -3,12 +3,15 @@
         class="notice-scroll-view"
         (ionScroll)='swipe($event)'>
 
-    <ion-card mode="ios" class="notice-header" slot="fixed" [ngClass]="scrollDir === 'down' ? 'notice-fixed-bar' : ''">
+    <ion-card mode="ios" class="notice-header">
         <ion-item *ngIf="consultant" class="notice-consultant-info" href="tel:{{consultant.tel}}" mode="md">
             <ion-avatar class="notice-head-img">
                 <img [src]="consultant.headImg">
             </ion-avatar>
-            <ion-card-content class="notice-info-card notice-color-normal">
+            <ion-card-content style="padding:1em 0" class="notice-info-card notice-color-normal">
+                <p>尊敬的顾总：您好！</p>
+                <!--<p>我们已完成了本季度创业服务工作</p>-->
+                <!--<p>如有疑问，欢迎随时与我联系</p>-->
                 <p>您的专属顾问：{{consultant.name}}</p>
                 <p>联系手机：<a>
                     <ion-icon name="call"></ion-icon>
@@ -18,31 +21,42 @@
         </ion-item>
 
         <ion-card-content class="notice-step" *ngIf="noticeInfo">
-            <p>已完成：{{noticeInfo.finished}}</p>
-            <p class="notice-color-waring">待完成：{{noticeInfo.Upcoming}}</p>
-            <ng-template [ngIf]="!overTime" [ngIfElse]="elseBlock">
-                <p>距离注册办结：
-                    <span class="notice-color-waring">{{reDays}}</span> 天
-                    <span class="notice-color-waring">{{reHours}}</span> 小时
-                    <span class="notice-color-waring">{{reMinutes}}</span> 分
-                    <span class="notice-color-waring">{{reSecond}}</span> 秒
-                </p>
-            </ng-template>
-
+            <div style="display: flex">
+                <p>已完成：</p>
+                <div style="display: flex;flex-flow: column">
+                    <p *ngFor="let item of noticeInfo.finished"><span>・</span>{{item}}</p>
+                </div>
+            </div>
+            <div style="display: flex">
+                <p class="notice-color-waring">正实施：</p>
+                <div style="display: flex;flex-flow: column">
+                    <p *ngFor="let item of noticeInfo.Upcoming"><span>・</span>{{item}}</p>
+                </div>
+            </div>
         </ion-card-content>
     </ion-card>
 
-    <ion-card mode="ios" class="notice-card"
-              [ngClass]="scrollDir === 'down' ? 'fixed-bar-margin' : 'fixed-card-margin'">
-        <ion-card-header mode="md">
-            <ion-card-title class="notice-card-title" mode="md">请您尽快完成公司签字文件</ion-card-title>
-        </ion-card-header>
+    <ion-card mode="ios" class="notice-card">
+        <!--<ion-card-header mode="md">-->
+        <!--<ion-card-title class="notice-card-title" mode="md">本月财务报告</ion-card-title>-->
+        <!--</ion-card-header>-->
+        <ion-card-content mode="md" class="notice-card-content">
+            <!--<p>尊敬的顾总：</p>-->
+            <!--<p class="">我们顺利完成了本季度财务报税工作，汇报如下：</p>-->
+            <p>【本月财务报告】</p>
+            <pre class="notice-card-text">  本年收入:0     本年支出:12.88万   本年利润:<span style="color: red">-12.88万</span></pre>
+            <pre class="notice-card-text">  所得税:0        个所税:1030元       增值税留抵:1.57万</pre>
+            <pre class="notice-card-text">  R&D项目:6    研发费用:6.61万     研发收入:0</pre>
+            <br>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card mode="ios" class="notice-card">
         <ion-card-content mode="md">
-            <p>目前还需您尽快完成：</p>
-            <p class="notice-card-nextLine">1、务必2月27日全体股东完成签字，并把签字资料回寄给我们，以便我们尽快提交相关资料取得营业执照；</p>
-            <p class="notice-card-nextLine">2、待收到签字资料后，会告知银行开户时间，预计是3月4号-5号样子，请周总提前安排好时间到宁波开户，
-                带上身份证原件，因设及网银，还需带上另外一位股东或者网银负责人的身份证原件；</p>
-            <p class="notice-card-nextLine">3、请尽快确认投资人的信息以便我们尽快准备好增资扩股的资料，争取在3月15日之前完成投资人进钱和变更手续。</p><br>
+            <p>【易创特别提醒】</p>
+            <p class="notice-card-nextLine">1.我们了解到您目前公司无人交社保，且至今没有实际办公场地，这将影响到公司在创新券申领、智团创业等政策方面的享受，请您尽快办理哦~</p>
+            <p class="notice-card-nextLine">2.为了更直观区分研发费用，准确加计扣除，请您将购入的材料及设备根据R&D项目进行划分，并在报销单上作备注。</p>
+            <p class="notice-card-nextLine">3.新政发布！自4月1日起，增值税税率发生大变革，制造业等行业税率由16%降至13%，有关税改前后发票开具问题欢迎向我随时咨询了解。</p><br>
         </ion-card-content>
     </ion-card>
 

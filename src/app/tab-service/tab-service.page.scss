@@ -111,4 +111,29 @@
   }
 }
 
+.report-detail-card-others {
+  h5 {
+    color: #30455d !important;
+    font-size: 1em;
+  }
 
+  p {
+    margin: 1em 1em 1em 2em !important;
+  }
+
+  .report-service-label {
+    color: #30455d !important;
+    font-size: .9em;
+    margin-left: 1em;
+  }
+
+  .report-detail-card-list {
+    p {
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+      span {
+        color: orange;
+      }
+    }
+  }
+}

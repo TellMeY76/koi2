@@ -4,7 +4,7 @@ $transition: all .3s;
 $step-transition: all .4s;
 
 $consultant-font-size: 14px;
-$font-size-zoom: .98em;
+$font-size-zoom: .92em;
 $fixed-bar-margin: 10em;
 $fixed-card-margin: 14.5em;
 
@@ -39,8 +39,8 @@ $fixed-card-margin: 14.5em;
 }
 
 .notice-head-img {
-  width: 68px;
-  height: 68px;
+  width: 65px;
+  height: 65px;
   margin: .5em;
 }
 
@@ -109,8 +109,17 @@ $fixed-card-margin: 14.5em;
   color: #f25454;
 }
 
+.notice-card-content {
+  .notice-card-text {
+    font-family: auto;
+    font-size: 12px;
+    margin: 1em 0;
+    border-bottom:1px solid rgba(0, 0, 0, .1);
+  }
+}
+
 .notice-card-nextLine {
-  text-indent: 2em;
+  text-indent: 1.9em;
 }
 
 @media screen and (max-width: 320px) {
@@ -122,7 +131,7 @@ $fixed-card-margin: 14.5em;
   }
 
   .notice-info-card {
-    padding: 0 .4em;
+    padding: 0;
   }
 
   .notice-fixed-bar {
