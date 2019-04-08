@@ -21,7 +21,7 @@
             <div class="report-detail-card-title">
                 创业顾问建议：
             </div>
-            <div class="report-detail-card-content">
+            <div class="report-detail-card-content" style="padding: 0 1em 1em 1em;">
                 <p class="report-detail-suggest" [innerHTML]="info.suggest"></p>
                 <p class="content-label" *ngIf="info.weAdvice.label">{{info.weAdvice.label}}</p>
                 <ol class="content-list" *ngIf="info.weAdvice.contents"
@@ -38,7 +38,7 @@
                    *ngIf="info.weAdvice.others">{{info.weAdvice.others}}</p>
             </div>
         </div>
-        <div class="report-detail-card">
+        <div class="report-detail-card" *ngIf="schedule['schedule'].length">
             <div class="report-detail-card-title">
                 行动规划：
             </div>

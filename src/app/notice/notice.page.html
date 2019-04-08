@@ -9,9 +9,6 @@
                 <img [src]="consultant.headImg">
             </ion-avatar>
             <ion-card-content style="padding:1em 0" class="notice-info-card notice-color-normal">
-                <p>尊敬的顾总：您好！</p>
-                <!--<p>我们已完成了本季度创业服务工作</p>-->
-                <!--<p>如有疑问，欢迎随时与我联系</p>-->
                 <p>您的专属顾问：{{consultant.name}}</p>
                 <p>联系手机：<a>
                     <ion-icon name="call"></ion-icon>
@@ -21,42 +18,42 @@
         </ion-item>
 
         <ion-card-content class="notice-step" *ngIf="noticeInfo">
-            <div style="display: flex">
+            <div class="notice-step-block" *ngIf="noticeInfo.finished.length">
                 <p>已完成：</p>
-                <div style="display: flex;flex-flow: column">
+                <div class="notice-step-items">
                     <p *ngFor="let item of noticeInfo.finished"><span>・</span>{{item}}</p>
                 </div>
             </div>
-            <div style="display: flex">
-                <p class="notice-color-waring">正实施：</p>
-                <div style="display: flex;flex-flow: column">
+            <div class="notice-step-block" *ngIf="noticeInfo.Upcoming.length">
+                <p class="notice-color-waring">准备实施：</p>
+                <div class="notice-step-items">
                     <p *ngFor="let item of noticeInfo.Upcoming"><span>・</span>{{item}}</p>
                 </div>
             </div>
         </ion-card-content>
     </ion-card>
 
-    <ion-card mode="ios" class="notice-card">
-        <!--<ion-card-header mode="md">-->
-        <!--<ion-card-title class="notice-card-title" mode="md">本月财务报告</ion-card-title>-->
-        <!--</ion-card-header>-->
-        <ion-card-content mode="md" class="notice-card-content">
-            <!--<p>尊敬的顾总：</p>-->
-            <!--<p class="">我们顺利完成了本季度财务报税工作，汇报如下：</p>-->
-            <p>【本月财务报告】</p>
-            <pre class="notice-card-text">  本年收入:0     本年支出:12.88万   本年利润:<span style="color: red">-12.88万</span></pre>
-            <pre class="notice-card-text">  所得税:0        个所税:1030元       增值税留抵:1.57万</pre>
-            <pre class="notice-card-text">  R&D项目:6    研发费用:6.61万     研发收入:0</pre>
-            <br>
-        </ion-card-content>
-    </ion-card>
+    <!--    <ion-card mode="ios" class="notice-card">-->
+    <!--&lt;!&ndash;        <ion-card-header mode="md">&ndash;&gt;-->
+    <!--&lt;!&ndash;            <ion-card-title class="notice-card-title" mode="md">本月财务报告</ion-card-title>&ndash;&gt;-->
+    <!--&lt;!&ndash;        </ion-card-header>&ndash;&gt;-->
+    <!--        <ion-card-content mode="md" class="notice-card-content">-->
+    <!--            <p>目前还需您尽快确认：</p>-->
+    <!--            <pre class="notice-card-text">  本年收入:0     本年支出:12.88万   本年利润:<span style="color: red">-12.88万</span></pre>-->
+    <!--            <pre class="notice-card-text">  所得税:0        个所税:1030元       增值税留抵:1.57万</pre>-->
+    <!--            <pre class="notice-card-text">  R&D项目:6    研发费用:6.61万     研发收入:0</pre>-->
+    <!--            <br>-->
+    <!--        </ion-card-content>-->
+    <!--    </ion-card>-->
 
     <ion-card mode="ios" class="notice-card">
-        <ion-card-content mode="md">
-            <p>【易创特别提醒】</p>
-            <p class="notice-card-nextLine">1.我们了解到您目前公司无人交社保，且至今没有实际办公场地，这将影响到公司在创新券申领、智团创业等政策方面的享受，请您尽快办理哦~</p>
-            <p class="notice-card-nextLine">2.为了更直观区分研发费用，准确加计扣除，请您将购入的材料及设备根据R&D项目进行划分，并在报销单上作备注。</p>
-            <p class="notice-card-nextLine">3.新政发布！自4月1日起，增值税税率发生大变革，制造业等行业税率由16%降至13%，有关税改前后发票开具问题欢迎向我随时咨询了解。</p><br>
+        <ion-card-content mode="md" class="notice-card-content">
+            <p>目前尚需您确认以下信息：</p>
+            <p class="notice-card-nextLine"> 1.为便于贵公司今年完成区工程申报，为后续顺利实施高企申报做准备，我们会配合贵公司按
+                照高企账务处理规范进行调账，鉴于贵司发展潜力巨大，发展前景良好，并与易创有良好的合作关系，我们此次将免费为贵公司进行调账。</p>
+            <p class="notice-card-nextLine">2.调账完成后，建议贵公司升级到高企服务套餐，以便后续高企申报工作顺利进行，高企
+                服务套餐原价2500元/月，我们将给予贵公司极其优惠的套餐价格（1280元/月），希望以后与贵司建立持续良好的长久合作关系。</p>
+            <p class="notice-card-nextLine">3.以上信息若无问题，请尽快确认，并安排财务、项目申报部及审计部门会面，我们会尽快完成调账工作，以便贵司顺利申报区工程项目。</p><br>
         </ion-card-content>
     </ion-card>
 

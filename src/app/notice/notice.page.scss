@@ -47,6 +47,15 @@ $fixed-card-margin: 14.5em;
 .notice-step {
   padding: .5em 2em;
   transition: $step-transition;
+
+  .notice-step-block {
+    display: flex;
+
+    .notice-step-items {
+      display: flex;
+      flex-flow: column
+    }
+  }
 }
 
 .notice-fixed-bar {
@@ -110,16 +119,18 @@ $fixed-card-margin: 14.5em;
 }
 
 .notice-card-content {
+  letter-spacing: 1px;
+
   .notice-card-text {
     font-family: auto;
     font-size: 12px;
     margin: 1em 0;
-    border-bottom:1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
 }
 
 .notice-card-nextLine {
-  text-indent: 1.9em;
+  text-indent: 1.2em;
 }
 
 @media screen and (max-width: 320px) {

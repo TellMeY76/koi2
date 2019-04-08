@@ -1,9 +1,9 @@
 <ion-header mode="ios">
     <ion-segment scrollable="true" class="report-tab-btns" (ionChange)="segmentChanged()" mode="md"
-                 value="工商服务"
+                 value="商事服务"
                  #contentSegment>
-        <ion-segment-button class="report-tab-btn" mode="md" value="工商服务">
-            <ion-label>工商服务</ion-label>
+        <ion-segment-button class="report-tab-btn" mode="md" value="商事服务">
+            <ion-label>商事服务</ion-label>
         </ion-segment-button>
         <ion-segment-button class="report-tab-btn" mode="md" value="政策匹配">
             <ion-label>政策匹配</ion-label>
@@ -23,7 +23,7 @@
                 [options]="slideOpts"
                 #contentSlides>
         <ion-slide class="report-slide">
-            <app-repo-tab [tabId]="0"></app-repo-tab>
+            <app-repo-tab style="width: 100%;" [tabId]="0"></app-repo-tab>
         </ion-slide>
         <ion-slide class="report-slide">
             <app-repo-tab [tabId]="1"></app-repo-tab>
