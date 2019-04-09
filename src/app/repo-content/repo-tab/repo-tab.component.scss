@@ -1,5 +1,5 @@
 .report-fixed-height {
-  height: -webkit-fill-available;
+  height: calc(100vh - 56px);
   padding-bottom: 1em;
   overflow: scroll;
 }
