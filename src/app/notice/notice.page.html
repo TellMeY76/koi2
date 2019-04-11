@@ -8,12 +8,14 @@
             <ion-avatar class="notice-head-img">
                 <img [src]="consultant.headImg">
             </ion-avatar>
-            <ion-card-content style="padding:1em 0" class="notice-info-card notice-color-normal">
-                <p>您的专属顾问：{{consultant.name}}</p>
-                <p>联系手机：<a>
-                    <ion-icon name="call"></ion-icon>
-                    {{consultant.tel}}
-                </a></p>
+            <ion-card-content class="notice-info-card notice-info-card-padding notice-color-normal">
+                <p class="notice-consultant-info-p">您的专属顾问：{{consultant.name}}</p>
+                <p class="notice-consultant-info-p">联系手机：
+                    <a class="notice-consultant-info-link">
+                        <ion-icon class="notice-consultant-info-icon" name="call"></ion-icon>
+                        {{consultant.tel}}
+                    </a>
+                </p>
             </ion-card-content>
         </ion-item>
 
@@ -32,19 +34,6 @@
             </div>
         </ion-card-content>
     </ion-card>
-
-    <!--    <ion-card mode="ios" class="notice-card">-->
-    <!--&lt;!&ndash;        <ion-card-header mode="md">&ndash;&gt;-->
-    <!--&lt;!&ndash;            <ion-card-title class="notice-card-title" mode="md">本月财务报告</ion-card-title>&ndash;&gt;-->
-    <!--&lt;!&ndash;        </ion-card-header>&ndash;&gt;-->
-    <!--        <ion-card-content mode="md" class="notice-card-content">-->
-    <!--            <p>目前还需您尽快确认：</p>-->
-    <!--            <pre class="notice-card-text">  本年收入:0     本年支出:12.88万   本年利润:<span style="color: red">-12.88万</span></pre>-->
-    <!--            <pre class="notice-card-text">  所得税:0        个所税:1030元       增值税留抵:1.57万</pre>-->
-    <!--            <pre class="notice-card-text">  R&D项目:6    研发费用:6.61万     研发收入:0</pre>-->
-    <!--            <br>-->
-    <!--        </ion-card-content>-->
-    <!--    </ion-card>-->
 
     <ion-card mode="ios" class="notice-card">
         <ion-card-content mode="md" class="notice-card-content">

@@ -1,40 +1,40 @@
 <div class="report-fixed-height">
-    <div class="report-detail-container">
+    <div class="report-detail-container" *ngIf="info">
         <div class="report-detail-card">
             <div class="report-detail-icon">
-                <ion-icon [name]="info.icon"></ion-icon>
+                <ion-icon class="report-detail-icon-size" [name]="info.icon"></ion-icon>
             </div>
             <div class="report-detail-title">
-                <p class="detail-title-name">{{info.name}}</p>
-                <p class="detail-title-description">{{info.description}}</p>
+                <p class="report-detail-title-p detail-title-name">{{info.name}}</p>
+                <p class="report-detail-title-p detail-title-description">{{info.description}}</p>
             </div>
         </div>
-        <div class="report-detail-card" style="padding-bottom: 1em;">
+        <div class="report-detail-card report-detail-card-statusLabel">
             <div class="report-detail-card-title">
                 {{info.statusLabel}}：
             </div>
             <div class="report-detail-card-content">
-                <p *ngFor="let status of info.status">{{status}}</p>
+                <p class="report-detail-card-content-p" *ngFor="let status of info.status">{{status}}</p>
             </div>
         </div>
         <div class="report-detail-card">
             <div class="report-detail-card-title">
                 创业顾问建议：
             </div>
-            <div class="report-detail-card-content" style="padding: 0 1em 1em 1em;">
-                <p class="report-detail-suggest" [innerHTML]="info.suggest"></p>
-                <p class="content-label" *ngIf="info.weAdvice.label">{{info.weAdvice.label}}</p>
+            <div class="report-detail-card-content report-detail-card-suggest">
+                <p class="report-detail-card-content-p report-detail-suggest" [innerHTML]="info.suggest"></p>
+                <p class="report-detail-card-content-p content-label" *ngIf="info.weAdvice.label">{{info.weAdvice.label}}</p>
                 <ol class="content-list" *ngIf="info.weAdvice.contents"
                     [ngClass]="info.weAdvice.label?'content-with-label':''">
-                    <li *ngFor="let advice of info.weAdvice.contents">{{advice}}</li>
+                    <li class="report-detail-card-content-li" *ngFor="let advice of info.weAdvice.contents">{{advice}}</li>
                 </ol>
                 <ol class="content-list" *ngIf="info.weAdvice.wordValues"
                     [ngClass]="info.weAdvice.label?'content-with-label':''">
-                    <li *ngFor="let wv of info.weAdvice.wordValues">{{wv.word}}
+                    <li class="report-detail-card-content-li" *ngFor="let wv of info.weAdvice.wordValues">{{wv.word}}
                         <span class="content-list-li-right">{{wv.value}}</span>
                     </li>
                 </ol>
-                <p style="text-indent:2em;padding: 0;margin: 1em 0 1em 0" class="content-list"
+                <p class="report-detail-card-content-p report-detail-card-suggest-weAdvice content-list"
                    *ngIf="info.weAdvice.others">{{info.weAdvice.others}}</p>
             </div>
         </div>
@@ -51,13 +51,13 @@
                         </div>
                         <div class="action-plan-timeline-content">
                             <div class="timeline-content-row">
-                                <p class="action-plan-item action-plan-item-left">{{scheduleItem.content}}</p>
-                                <p class="action-plan-item action-plan-item-right"
+                                <p class="report-detail-card-content-p action-plan-item action-plan-item-left">{{scheduleItem.content}}</p>
+                                <p class="report-detail-card-content-p action-plan-item action-plan-item-right"
                                    [ngClass]="scheduleItem.import ? 'tipImport':' action-plan-executive'">{{scheduleItem.executive}}</p>
                             </div>
                             <div class="timeline-content-row ">
-                                <p class="action-plan-item-left action-plan-item-tip">{{scheduleItem.tip}}</p>
-                                <p class="action-plan-date action-plan-item-right">{{scheduleItem.date}}</p>
+                                <p class="report-detail-card-content-p action-plan-item-left action-plan-item-tip">{{scheduleItem.tip}}</p>
+                                <p class="report-detail-card-content-p action-plan-date action-plan-item-right">{{scheduleItem.date}}</p>
                             </div>
                         </div>
                     </div>

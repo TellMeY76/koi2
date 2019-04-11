@@ -5,7 +5,7 @@ import {PACKAGES} from '../config/package';
 @Component({
     selector: 'app-tab-service',
     templateUrl: './tab-service.page.html',
-    styleUrls: ['./tab-service.page.scss', '../tab-x/tab-x.page.scss'],
+    styleUrls: ['./tab-service.page.scss'],
 })
 export class TabServicePage implements OnInit {
     bestPlan: Package;

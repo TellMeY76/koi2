@@ -2,6 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RepoContentPage } from './repo-content.page';
+import {IonicModule} from '@ionic/angular';
 
 describe('RepoContentPage', () => {
   let component: RepoContentPage;
@@ -9,6 +10,7 @@ describe('RepoContentPage', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [IonicModule.forRoot()],
       declarations: [ RepoContentPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })

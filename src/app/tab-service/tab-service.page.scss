@@ -1,3 +1,134 @@
+.report-detail-container {
+  display: flex;
+  flex-direction: column;
+  background: #f5f6fa;
+}
+
+.report-detail-card {
+  width: 100%;
+  margin: .4em 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    margin: 0 0 .4em 0;
+    padding: 2em 0 1em 0;
+    flex-direction: row;
+  }
+}
+
+.report-detail-icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 1em;
+  padding-top: 14px;
+  border-radius: 25px;
+  background: rgb(97, 146, 179);
+  color: #fff;
+  text-align: center;
+
+  ion-icon {
+    font-size: 24px;
+  }
+}
+
+.report-detail-title {
+  padding-left: 15px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.detail-title-name {
+  font-size: 1.2em;
+  line-height: 1.3;
+  color: #30455d;
+}
+
+.detail-title-description {
+  line-height: 2.5;
+  font-size: 1em;
+  color: #999;
+}
+
+.report-detail-card-title {
+  position: relative;
+  height: 3em;
+  border-bottom: 1px solid #ebebeb;
+  color: #30455d;
+  font-size: 1em;
+  padding: 0 .6em;
+  line-height: 3;
+
+  &:after {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    display: block;
+    width: 4px;
+    height: 24px;
+    background-color: #a3bed3;
+    content: "";
+  }
+}
+
+.report-detail-card-content {
+  padding: 0 1em;
+
+  p {
+    margin: 1em 0 0 0;
+  }
+}
+
+.report-detail-card-content p, li {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.7;
+}
+
+.report-detail-suggest {
+  text-indent: 2em;
+  line-height: 1.8 !important;
+}
+
+.content-label {
+  margin-top: 0 !important;
+  margin-left: 1em !important;
+}
+
+.content-list {
+  padding-left: 2em;
+  margin: 0 0 1em 0;
+}
+
+.content-with-label {
+  padding-left: 3em;
+}
+
+.report-detail-action-plan {
+  padding: 0;
+}
+
+.tipImport {
+  color: #f44336 !important;
+}
+
+.content-list-li-right {
+  float: right;
+  color: #f5a623 !important;
+
+  &:after {
+    content: ')';
+  }
+
+  &:before {
+    content: '(';
+  }
+}
+
+
 .service-program-description {
   text-indent: 2em;
   padding-bottom: 1em;
@@ -23,7 +154,7 @@
   color: #30455d;
   opacity: 1;
 
-  h3 {
+  .service-plan-name {
     font-size: 1.17em !important;
     text-align: center;
     font-weight: 100;
@@ -31,13 +162,13 @@
     margin-bottom: .7em;
   }
 
-  h4 {
+  .service-range-label {
     font-size: 1em !important;
     margin: 0;
     font-weight: 100;
   }
 
-  p {
+  .package-service-item {
     white-space: normal;
     text-indent: 0;
     margin-right: 1em;
@@ -61,22 +192,10 @@
   color: #30455d;
   font-size: 15px;
 
-  p {
+  .package-service-item {
     margin: 0 !important;
     font-size: 1em !important;
     line-height: 1.5 !important;
-  }
-}
-
-.package-buy {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1em;
-  margin-bottom: 1em;
-  line-height: 1.9em;
-
-  p {
-    margin: 0;
   }
 }
 
@@ -97,27 +216,13 @@
   float: right;
 }
 
-.report-consultant {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
-  a {
-    background: #30455d;
-    color: #fff;
-    padding: .7em 0;
-    font-size: 1.1em;
-    text-decoration: none;
-  }
-}
-
 .report-detail-card-others {
-  h5 {
+  .report-service-title {
     color: #30455d !important;
     font-size: 1em;
   }
 
-  p {
+  .report-service-item {
     margin: 1em 1em 1em 2em !important;
   }
 
@@ -128,12 +233,16 @@
   }
 
   .report-detail-card-list {
-    p {
+    .report-service-item {
       border-bottom: 1px solid rgba(0, 0, 0, .1);
 
-      span {
+      .report-service-item-mark {
         color: orange;
       }
     }
   }
+}
+
+.report-mark-red {
+  color: red;
 }

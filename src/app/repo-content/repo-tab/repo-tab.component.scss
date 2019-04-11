@@ -25,6 +25,10 @@
   }
 }
 
+.report-detail-card-statusLabel {
+  padding-bottom: 1em;
+}
+
 .report-detail-icon {
   width: 50px;
   height: 50px;
@@ -35,7 +39,7 @@
   color: #fff;
   text-align: center;
 
-  ion-icon {
+  .report-detail-icon-size {
     font-size: 24px;
   }
 }
@@ -43,7 +47,7 @@
 .report-detail-title {
   padding-left: 15px;
 
-  p {
+  .report-detail-title-p {
     margin: 0;
   }
 }
@@ -84,25 +88,33 @@
 .report-detail-card-content {
   padding: 0 1em;
 
-  p {
+  .report-detail-card-content-p{
     margin: 1em 0 0 0;
+  }
+
+  .report-detail-card-content-p, .report-detail-card-content-li{
+    font-size: 14px;
+    color: #333;
+    line-height: 1.7;
+    white-space: pre-wrap;
   }
 }
 
-.report-detail-card-content p, li {
-  font-size: 14px;
-  color: #333;
-  line-height: 1.7;
-  white-space: pre-wrap;
+.report-detail-card-suggest {
+  padding: 0 1em 1em 1em;
+
+  .report-detail-card-suggest-weAdvice {
+    text-indent: 2em;
+    padding: 0;
+    margin: 1em 0 1em 0;
+  }
 }
+
+
 
 .report-detail-suggest {
   text-indent: 2em;
   line-height: 1.8 !important;
-
-  span {
-    color: red;
-  }
 }
 
 .content-label {

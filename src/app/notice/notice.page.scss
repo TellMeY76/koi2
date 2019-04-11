@@ -33,7 +33,7 @@ $fixed-card-margin: 14.5em;
 .notice-consultant-info {
   transition: $transition;
 
-  p {
+  .notice-consultant-info-p {
     font-size: $consultant-font-size;
   }
 }
@@ -69,9 +69,18 @@ $fixed-card-margin: 14.5em;
     width: 100%;
     transition: $transition;
 
-    p {
+    .notice-consultant-info-p {
       transition: $transition;
       font-size: $font-size-zoom;
+
+      .notice-consultant-info-link {
+        text-decoration: none;
+
+        .notice-consultant-info-icon {
+          vertical-align: sub;
+          font-size: 16px;
+        }
+      }
     }
   }
 
@@ -96,17 +105,9 @@ $fixed-card-margin: 14.5em;
   }
 }
 
+
 .notice-color-normal {
   color: $normal-color;
-
-  a {
-    text-decoration: none;
-
-    ion-icon {
-      vertical-align: sub;
-      font-size: 16px;
-    }
-  }
 }
 
 .notice-color-waring {
@@ -143,6 +144,10 @@ $fixed-card-margin: 14.5em;
 
   .notice-info-card {
     padding: 0;
+  }
+
+  .notice-info-card-padding {
+    padding: 1em 0;
   }
 
   .notice-fixed-bar {

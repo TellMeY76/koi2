@@ -13,16 +13,6 @@ const routes: Routes = [
         component: TabsPage,
         children: [
             {
-                path: 'registration_scheme',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: '../tab-x/tab-x.module#TabXPageModule',
-                        data: {tabId: 0}
-                    }
-                ]
-            },
-            {
                 path: 'repo-content',
                 children: [
                     {
@@ -40,36 +30,7 @@ const routes: Routes = [
                     }
                 ]
             },
-            {
-                path: 'policy_match',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: '../tab-x/tab-x.module#TabXPageModule',
-                        data: {tabId: 1}
-                    }
-                ]
-            },
-            {
-                path: 'financing_plan',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: '../tab-x/tab-x.module#TabXPageModule',
-                        data: {tabId: 2}
-                    }
-                ]
-            },
-            {
-                path: 'fiscalTax_plan',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: '../tab-x/tab-x.module#TabXPageModule',
-                        data: {tabId: 3}
-                    }
-                ]
-            },
+
             {
                 path: 'service',
                 children: [

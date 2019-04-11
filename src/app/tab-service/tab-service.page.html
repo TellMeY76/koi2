@@ -17,17 +17,18 @@
             <div class="report-service report-detail-card-content">
                 <div class="service-view">
                     <div class="service-container">
-                        <h3>{{bestPlan.name}}</h3>
+                        <h3 class="service-plan-name">{{bestPlan.name}}</h3>
                         <div class="service-range">
-                            <h4>服务范围：</h4>
+                            <h4 class="service-range-label">服务范围：</h4>
                             <div class="package-service-items">
-                                <p *ngFor="let range of bestPlan.ranges">{{range}}</p>
+                                <p class="package-service-item" *ngFor=" let range of bestPlan.ranges">{{range}}</p>
                             </div>
                         </div>
                         <div class="service-content">
-                            <h4>服务内容：</h4>
+                            <h4 class="service-range-label">服务内容：</h4>
                             <div class="package-service-items">
-                                <p *ngFor="let content of bestPlan.contents">{{content}}</p>
+                                <p class="package-service-item"
+                                   *ngFor="let content of bestPlan.contents">{{content}}</p>
                             </div>
                         </div>
                     </div>
@@ -48,24 +49,24 @@
                 其他推荐服务：
             </div>
             <div class="report-service report-detail-card-content report-detail-card-list">
-                <h5>知识产权申请</h5>
-                <p>发明专利 <span>7000</span>元服务费+官费</p>
-                <p>实用新型 <span>3000</span>元服务费+官费</p>
-                <p>外观专利 <span>1500</span>元服务费+官费</p>
-                <p>境内商标 <span>800</span>元服务费+官费</p>
-                <p>商标转让 <span>800</span>元服务费+官费</p>
-                <p>计算机软件著作权 <span>800</span>元服务费+官费</p>
+                <h5 class="report-service-title">知识产权申请</h5>
+                <p class="report-service-item">发明专利 <span class="report-service-item-mark">7000</span>元服务费+官费</p>
+                <p class="report-service-item">实用新型 <span class="report-service-item-mark">3000</span>元服务费+官费</p>
+                <p class="report-service-item">外观专利 <span class="report-service-item-mark">1500</span>元服务费+官费</p>
+                <p class="report-service-item">境内商标 <span class="report-service-item-mark">800</span>元服务费+官费</p>
+                <p class="report-service-item">商标转让 <span class="report-service-item-mark">800</span>元服务费+官费</p>
+                <p class="report-service-item">计算机软件著作权 <span>800</span>元服务费+官费</p>
             </div>
             <div class="report-service report-detail-card-content report-detail-card-list">
-                <h5>人力资源服务</h5>
+                <h5 class="report-service-title">人力资源服务</h5>
                 <span class="report-service-label">人事代理服务：</span>
-                <p>代发薪资 <span>60</span>元/人/月/次</p>
-                <p>代缴社保<span>19.9</span>元/人/月/次</p>
+                <p class="report-service-item">代发薪资 <span>60</span>元/人/月/次</p>
+                <p class="report-service-item">代缴社保<span>19.9</span>元/人/月/次</p>
                 <span class="report-service-label">劳务外包服务：</span>
-                <p>社保筹划 <span>60</span>元/人/月/次起</p>
+                <p class="report-service-item">社保筹划 <span>60</span>元/人/月/次起</p>
             </div>
             <div class="report-service report-detail-card-content">
-                <h5>钉钉专家上门部署 <span style="color: red">免费</span></h5>
+                <h5 class="report-service-title">钉钉专家上门部署 <span class="report-mark-red">免费</span></h5>
             </div>
         </div>
 
