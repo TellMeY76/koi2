@@ -1,4 +1,4 @@
-<div class="report-fixed-height">
+<div class="report-fixed-height" *ngIf="info">
     <div class="report-detail-container">
         <div class="report-detail-card">
             <div class="report-detail-icon">
@@ -9,7 +9,7 @@
                 <p class="detail-title-description">{{info.description}}</p>
             </div>
         </div>
-        <div class="report-detail-card" style="padding-bottom: 1em;">
+        <div class="report-detail-card report-statusLabel">
             <div class="report-detail-card-title">
                 {{info.statusLabel}}：
             </div>

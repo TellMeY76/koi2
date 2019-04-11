@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RepoTabComponent } from './repo-tab.component';
+import {IonicModule} from '@ionic/angular';
 
 describe('RepoTabComponent', () => {
   let component: RepoTabComponent;
@@ -8,6 +9,7 @@ describe('RepoTabComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [IonicModule.forRoot()],
       declarations: [ RepoTabComponent ]
     })
     .compileComponents();

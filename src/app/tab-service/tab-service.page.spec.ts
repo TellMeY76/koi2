@@ -2,6 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TabServicePage } from './tab-service.page';
+import {IonicModule} from '@ionic/angular';
 
 describe('TabServicePage', () => {
   let component: TabServicePage;
@@ -9,6 +10,7 @@ describe('TabServicePage', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [IonicModule.forRoot()],
       declarations: [ TabServicePage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
