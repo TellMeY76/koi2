@@ -6,8 +6,8 @@ export const NOTICE: Notice = {
         tel: '13732173849',
         headImg: '../../assets/img/head.jpg'
     },
-    finished: '网上申报资料提交',
-    Upcoming: '签署纸质文书资料',
+    finished: ['1季度账务处理及纳税申报工作'],
+    Upcoming: ['投资人注册资金的确认', '董事会成员及章程的修正'],
     deadline: 'Mar 25, 2019 00:00:00',
     tip: {}
 };

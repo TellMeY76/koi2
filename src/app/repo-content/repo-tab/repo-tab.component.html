@@ -44,7 +44,7 @@
                 <div class="action-plan-timeline timeline-container">
                     <div class="action-plan-timeline-block" *ngFor="let scheduleItem of schedule['schedule']">
                         <div class="action-plan-timeline-circle"
-                             [ngClass]="scheduleItem.complete === 'ture'?'itemCompleted':'itemNormal'">
+                             [ngClass]="scheduleItem.complete === 'true'?'itemCompleted':'itemNormal'">
                             <ion-icon name="checkmark-circle"></ion-icon>
                         </div>
                         <div class="action-plan-timeline-content">

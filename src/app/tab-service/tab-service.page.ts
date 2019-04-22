@@ -16,6 +16,6 @@ export class TabServicePage implements OnInit {
 
     ngOnInit() {
         this.bestPlan = PACKAGES[2];
-        this.anotherPlans = [PACKAGES[0], PACKAGES[1]];
+        this.anotherPlans = [PACKAGES[0], PACKAGES[1], PACKAGES[3]];
     }
 }
