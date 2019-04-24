@@ -77,7 +77,7 @@ export const SCHEDULES = [
         title: '注册方案 & 股权架构设计',
         schedule: [
             {content: '经济普查', tip: '', date: '2019.3.31', executive: '公司负责人', complete: 'true'},
-            {content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019.4.2', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019.5.15', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '社保公积金年检', tip: '', date: '2019.5.31', executive: '公司负责人', complete: 'false'},
             {content: '工商年检', tip: '', date: '2019.6.31', executive: '易创顾问 徐蓉', complete: 'false'},
         ]
@@ -85,8 +85,8 @@ export const SCHEDULES = [
     {
         title: '政策匹配',
         schedule: [
-            {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.4.15', executive: '企业负责人', complete: 'false'},
-            {content: '知识产权申请（未订购）', tip: '科技型项目申报的前提', date: ' 2019.5.1', executive: '易创知识产权部', complete: 'false'},
+            {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.5.15', executive: '企业负责人', complete: 'false'},
+            {content: '知识产权申请（未订购）', tip: '科技型项目申报的前提', date: ' 2019.6.1', executive: '易创知识产权部', complete: 'false'},
             {content: '撰写可行性分析报告（未订购）', tip: '为后续项目申报打好文件基础', date: '2019.6.1', executive: '易创项目申报部', complete: 'false'},
             {content: '研发费用补贴申请（未订购）', tip: '最高不超过支出额的5%给予补助', date: '2019.6.15', executive: '易创项目申报部', complete: 'false'},
             {content: '宁波市智团创业计划（未订购）', tip: '最高50万奖励', date: '2019.10.15', executive: '易创项目申报部', complete: 'false'},
@@ -109,25 +109,27 @@ export const SCHEDULES = [
         title: '财税计划',
         schedule: [
             {content: '完成员工信息采集表填写 ', tip: '为政策享受、研发费用做准备 ', date: '2019.4.10', executive: '企业负责人', complete: 'true'},
-            {content: '出具社保补贴政策享受评估报告', tip: '符合条件，可享受2000元/人补贴', date: '2019.4.12', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '高企-高企申报评估与规划服务', tip: '生成规划报告', date: '2019.4.13', executive: '易创顾问 徐蓉', complete: 'true'},
+            {content: '高企-首次研发项目立项辅导服务', tip: '生成研发项目立项计划表', date: '2019.4.15', executive: '易创顾问 徐蓉', complete: 'true'},
+            {content: '出具社保补贴政策享受评估报告', tip: '符合条件，可享受2000元/人补贴', date: '2019.4.29', executive: '易创顾问 徐蓉', complete: 'false'},
 
-            {content: '高企-高企申报评估与规划服务', tip: '生成规划报告', date: '2019.4.13', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '高企-财务规范性辅导服务', tip: '规范报销/汇款/出入库/工资发放流程', date: '2019.4.14', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '高企-首次研发项目立项辅导服务', tip: '生成研发项目立项计划表', date: '2019.4.15', executive: '易创顾问 徐蓉', complete: 'false'},
 
-            {content: '一般纳税人2季度税收筹划', tip: '避免多交增值税', date: '2019.4.20', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '2季度企业所得税预估及筹划', tip: '避免多交增值税', date: '2019.4.20', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '高企-财务规范性辅导服务', tip: '规范报销/汇款/出入库/工资发放流程', date: '2019.5.14', executive: '易创顾问 徐蓉', complete: 'false'},
 
-            {content: '业务招待费、广宣费税前扣除比例核算，进行所得税税收筹划', date: '2019.4.25', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '注册资本认缴时间确认及提醒', tip: '确保项目申报顺利进行', date: '2019.4.30', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '核对往来款，汇报应收应付及欠款', date: '2019.5.5', executive: '易创顾问 徐蓉', complete: 'false'},
 
-            {content: '高企-首次跟进高企实施进度', tip: '出具高企流程规范性反馈报告', date: '2019.5.7', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '高企-首次检测高企指标达标情况', tip: '出具高企指标检测报告', date: '2019.5.9', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '高企-沟通研发项目实施情况', tip: '更新研发项目立项计划表', date: '2019.5.12', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '一般纳税人2季度税收筹划', tip: '避免多交增值税', date: '2019.5.20', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '2季度企业所得税预估及筹划', tip: '避免多交增值税', date: '2019.5.20', executive: '易创顾问 徐蓉', complete: 'false'},
 
-            {content: '测算企业半年度税负率是否达标', tip: '规避企业涉税风险', date: '2019.5.13', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '核查企业印花税、房产税、城建税等小税种缴纳情况，并作汇报', tip: '规避企业涉税风险', date: '2019.6.12', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '业务招待费、广宣费税前扣除比例核算，进行所得税税收筹划', date: '2019.5.25', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '注册资本认缴时间确认及提醒', tip: '确保项目申报顺利进行', date: '2019.5.30', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '核对往来款，汇报应收应付及欠款', date: '2019.6.5', executive: '易创顾问 徐蓉', complete: 'false'},
+
+            {content: '高企-首次跟进高企实施进度', tip: '出具高企流程规范性反馈报告', date: '2019.6.5', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '高企-首次检测高企指标达标情况', tip: '出具高企指标检测报告', date: '2019.6.9', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '高企-沟通研发项目实施情况', tip: '更新研发项目立项计划表', date: '2019.6.12', executive: '易创顾问 徐蓉', complete: 'false'},
+
+            {content: '测算企业半年度税负率是否达标', tip: '规避企业涉税风险', date: '2019.6.13', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '核查企业印花税、房产税、城建税等小税种缴纳情况，并作汇报', tip: '规避企业涉税风险', date: '2019.6.13', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '预估年度所得税，修订当年税筹方案', tip: '所得税第一次预估', date: '2019.7.18', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '核对是否欠税', tip: '规避税务稽查风险', date: '2019.8.4', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '业务招待费、广宣费税前扣除比例核算，进行所得税税收筹划', date: '2019.9.19', executive: '易创顾问 徐蓉', complete: 'false'},
