@@ -78,28 +78,25 @@ export const SCHEDULES = [
     {
         title: '政策匹配',
         schedule: [
-            {content: '科技型企业认定', tip: '园区退税翻倍', date: '2019', executive: '易创顾问 齐培培', complete: 'false'},
-            {content: '优质型企业备案', tip: '最高50万奖励', date: '2019.4-5', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019.4-5', executive: '企业负责人', complete: 'false'},
-            {content: '优质产品申报', tip: '政府采购目录', date: '2019.4-5', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '试产新产品备案', tip: '每产品2000', date: '2019.4-5', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '知识产权申请', tip: '科技型项目申报的前提', date: ' 2019.4.21', executive: '易创知产 沈佳璐', complete: 'false'},
-            {content: '撰写可行性分析报告', tip: '为后续项目申报打好文件基础', date: '2019.4.24', executive: '企业负责人', complete: 'false'},
-            {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.4.20', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '创业场租补贴', tip: '年租金的20%,每年最高6000', date: '2019.6', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '研发费用补贴申请', tip: '最高不超过支出额的5%给予补助', date: '2019.6', executive: '易创申报 吴磊敏', complete: 'false'},
-            {content: '智团项目申报', tip: '最高50万元补贴', date: '2019.8', executive: '易创申报 吴磊敏', complete: 'false'},
+            {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.5.15', executive: '企业负责人', complete: 'false'},
+            {content: '科技型企业认定', tip: '园区退税资格确认', date: '2019.6.15', executive: '易创申报 吴磊敏', complete: 'false'},
+            {content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019.6.18', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '知识产权申请（未订购）', tip: '科技型项目申报的前提', date: ' 2019.6.20', executive: '易创知识产权部', complete: 'false'},
+            {content: '撰写可行性分析报告（未订购）', tip: '为后续项目申报打好文件基础', date: '2019.6.25', executive: '易创项目申报部', complete: 'false'},
+            {content: '研发费用补贴申请（未订购）', tip: '最高不超过支出额的5%给予补助', date: '2019.7.9', executive: '易创项目申报部', complete: 'false'},
+            {content: '宁波市智团创业计划（未订购）', tip: '最高50万奖励', date: '2019.10.15', executive: '易创项目申报部', complete: 'false'},
+            {content: '高新区优质型企业备案（未订购）', tip: '最高50万奖励', date: '2020.2.25', executive: '易创项目申报部', complete: 'false'},
         ]
     },
     {
         title: '融资计划',
         schedule: [
-            {content: '甬股交挂牌', tip: '', date: '2019.4.14 ', executive: '易创申报 吴磊敏', complete: 'false'},
+            {content: '甬股交挂牌（未订购）', tip: '', date: '2019.6.10 ', executive: '订购', complete: 'false'},
             {content: '优化商业融资计划书', tip: '', date: '2019.6.13', executive: ' 企业负责人', complete: 'false'},
             {content: '参加138期无咖“资本相亲会”', tip: '', date: ' 2019.6.28', executive: ' 企业负责人', complete: 'false'},
             {content: '申请天使引导基金', tip: '', date: '2019.7.11', executive: '企业负责人', complete: 'false'},
             {content: '约银行谈税金贷', tip: '', date: '2019.11.27', executive: ' 企业负责人', complete: 'false'},
-            {content: '宁波创业担保贷款申请', tip: '', date: '2019.12.15', executive: '易创申报 吴磊敏', complete: 'false'},
+            {content: '宁波创业担保贷款申请（未订购）', tip: '', date: '2019.12.15', executive: '订购', complete: 'false'},
         ]
     },
     {
@@ -111,6 +108,10 @@ export const SCHEDULES = [
             {content: '完成员工信息采集表填写 ', tip: '为政策享受、研发费用做准备 ', date: '2019.4.1', executive: '企业负责人', complete: 'false'},
             {content: '完成研发项目立项计划表填写 ', tip: '为政策享受、研发费用做准备 ', date: '2019.4.1', executive: '企业负责人', complete: 'false'},
             {content: '出具政策享受评估报告 ', tip: '符合条件，可享受2000元/人补贴', date: '2019.4.2', executive: '易创顾问 齐培培', complete: 'false'},
+
+            {content: '企业汽车租赁发票核查 ', tip: '检查企业汽车租赁有无续租', date: '2019.4.14', executive: '易创顾问 齐培培', complete: 'false'},
+            {content: '1季度账务处理及纳税申报 ', tip: '', date: '2019.4.14', executive: '易创顾问 齐培培', complete: 'false'},
+
             {content: '设置研发费用台账，便于加计扣除及研发补贴申请 ', tip: '10万研发费用节税3万', date: '2019.4.17', executive: '易创顾问 齐培培', complete: 'false'},
             {content: '业务招待费、广宣费、三项经费税前扣除比例核算，进行所得税税收筹划 ', date: '2019.4.20', executive: '易创顾问 齐培培', complete: 'false'},
             {content: '核对往来款，理清应收及欠款', tip: '防止企业资产流失 ', date: '2019.5.5', executive: '易创顾问 齐培培', complete: 'false'},
