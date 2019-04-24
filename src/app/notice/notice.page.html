@@ -7,7 +7,7 @@
             <ion-avatar class="notice-head-img">
                 <img [src]="consultant.headImg">
             </ion-avatar>
-            <ion-card-content class="notice-info-card notice-color-normal">
+            <ion-card-content style="padding:1em 0" class="notice-info-card notice-color-normal">
                 <p>您的专属顾问：{{consultant.name}}</p>
                 <p>联系手机：<a>
                     <ion-icon name="call"></ion-icon>
@@ -17,49 +17,40 @@
         </ion-item>
 
         <ion-card-content class="notice-step" *ngIf="noticeInfo">
-            <p>您的注册事项已全部办结！</p>
-            <p>办结时间：2019.03.05</p>
-            <p>比预估时间提前：
-                <span class="notice-color-waring">2</span> 天
-                <span class="notice-color-waring">3</span> 小时
-                <span class="notice-color-waring">26</span> 分
-            </p>
+            <div class="notice-step-block" *ngIf="noticeInfo.finished.length">
+                <p>已完成：</p>
+                <div class="notice-step-items">
+                    <p *ngFor="let item of noticeInfo.finished"><span>・</span>{{item}}</p>
+                </div>
+            </div>
+            <div class="notice-step-block" *ngIf="noticeInfo.Upcoming.length">
+                <p class="notice-color-waring">正实施：</p>
+                <div class="notice-step-items">
+                    <p *ngFor="let item of noticeInfo.Upcoming"><span>・</span>{{item}}</p>
+                </div>
+            </div>
         </ion-card-content>
     </ion-card>
 
     <ion-card mode="ios" class="notice-card">
-        <ion-card-header mode="md">
-            <ion-card-title class="notice-card-title" mode="md">下一步：增资扩股，完成投资人引入</ion-card-title>
-        </ion-card-header>
-
-        <ion-card-content mode="md">
-            <p>请尽快确认投资人（张海峰）投资意向。</p>
+        <ion-card-content mode="md" class="notice-card-content">
+            <p>【本月财务报告】</p>
+            <pre class="notice-card-text">  本年收入:0      本年支出:680     本年利润:<span style="color: red">-680</span></pre>
+            <pre class="notice-card-text">  所得税：0       个税：0             增值税：0</pre>
+            <pre class="notice-card-text">  研发项目:0      研发费用:0         研发收入:0</pre>
+            <br>
         </ion-card-content>
-
     </ion-card>
 
     <ion-card mode="ios" class="notice-card">
-
         <ion-card-content mode="md">
-            <p>本项服务您需付费：</p>
-            <p>1.注册服务费：<s>500元</s>（给您免费）</p>
-            <p>2.刻章费：680元</p>
-            <p style="text-align: end;">合计收费：680元</p>
-            <p>支付方式:</p>
-            <p>1.银行汇款</p>
-            <table class="notice-table">
-                <tr>
-                    <td>户名：李科科</td>
-                </tr>
-                <tr>
-                    <td>卡号：6228 4803 1054 5298 013</td>
-                </tr>
-                <tr>
-                    <td>开户行：中国农业银行宁波高新区支行</td>
-                </tr>
-            </table>
-            <p>2.长按二维码完成支付</p>
-            <img class="pay-qrCode" src="../../assets/img/wechat-pay.png">
+            <p>【易创特别提醒】</p>
+            <p class="notice-card-nextLine">1.为方便设置研发费用台账，进行研发费用加计扣除，请完成员工信息采集表的填写，并会同技术部门完成研发项目立项计划表的填写。</p>
+            <p class="notice-card-nextLine">2.据了解，我们企业目前为小规模纳税人，可享受每月十万元，每季度叁拾万元的增值税减免优惠，为享受该政策优惠，我们可在税收优惠额度内取得开票收入。</p>
+            <p class="notice-card-nextLine">3.经核查，企业1月份无汽车相关发票，建议可以签订租车协议，便于后期汽油票、过路费等发票入账。</p>
+            <p class="notice-card-nextLine">4.新政发布！自4月1日起，增值税税率发生重大变革，制造业等行业税率有16%将至13%，有关税改前后发票开具问题欢迎想我随时咨询了解。</p>
+
+            <br>
         </ion-card-content>
 
     </ion-card>
