@@ -22,6 +22,5 @@ export class TabXPage implements OnInit {
             map(res => res['tabId'])
         ).subscribe(res => this.tabId = res);
         this.info = REPO_DETAILS[this.tabId];
-        this.schedule = SCHEDULES[this.tabId];
     }
 }

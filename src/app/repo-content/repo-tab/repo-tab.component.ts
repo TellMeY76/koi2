@@ -10,7 +10,7 @@ import {REPO_DETAILS, SCHEDULES} from '../../config/reportDetails';
 export class RepoTabComponent implements OnInit {
     @Input() tabId;
     info: RepoDetail = new RepoDetail();
-    schedule: RepoSchedule = new RepoSchedule();
+    schedule: any;
 
     constructor() {
     }
