@@ -28,6 +28,7 @@ export class WeAdvice {
     label: string;
     contents?: string[];
     wordValues?: WordValues[];
+    declare?: any[];
     others?: string;
 }
 
@@ -42,6 +43,7 @@ export class ScheduleItem {
     tip?: string;
     executive: string;
     import?: boolean;
+    already?: boolean;
     complete: string;
 }
 
