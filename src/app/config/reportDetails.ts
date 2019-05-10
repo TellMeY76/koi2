@@ -82,11 +82,11 @@ export const SCHEDULES = [
     {
         title: '注册方案 & 股权架构设计',
         schedule: [
-            {content: '申请材料准备，完成签字盖章', tip: '', date: '2019.4.24', executive: ' 易创注册部 陈瑜波', complete: 'false'},
-            {content: '外经贸办理《对外贸易经营者备案登记证》', tip: '', date: '2019.4.25', executive: ' 易创注册部 陈瑜波', complete: 'false'},
-            {content: '检验检疫局办理自理报检登记', tip: '', date: '2019.4.25', executive: ' 易创注册部 陈瑜波', complete: 'false'},
-            {content: '外汇局办理外汇登记', tip: '', date: '2019.4.26', executive: ' 易创注册部 陈瑜波', complete: 'false'},
-            {content: '银行开立外汇账户', tip: '', date: '2019.4.28', executive: ' 易创注册部 陈瑜波', complete: 'false'},
+            {content: '申请材料准备，完成签字盖章', tip: '', date: '2019.4.24', executive: ' 易创注册部 陈瑜波', complete: 'true'},
+            {content: '外经贸办理《对外贸易经营者备案登记证》', tip: '', date: '2019.4.25', executive: ' 易创注册部 陈瑜波', complete: 'true'},
+            {content: '检验检疫局办理自理报检登记', tip: '', date: '2019.4.25', executive: ' 易创注册部 陈瑜波', complete: 'true'},
+            {content: '外汇局办理外汇登记', tip: '', date: '2019.4.26', executive: ' 易创注册部 陈瑜波', complete: 'true'},
+            {content: '银行开立外汇账户', tip: '', date: '2019.4.28', executive: ' 易创注册部 陈瑜波', complete: 'true'},
             {content: '海关办理电子口岸', tip: '', date: '2019.4.28', executive: ' 易创注册部 陈瑜波', complete: 'true'},
             {content: '工商年检', tip: '', date: '2019.05.25', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '社保年检（未订购）', tip: '', date: '2019.06.31', executive: '易创顾问 徐蓉', complete: 'false'},
@@ -96,9 +96,9 @@ export const SCHEDULES = [
     {
         title: '政策匹配',
         schedule: [
-            {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.6.1', executive: '企业负责人', complete: 'true'},
+            {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.3.1', executive: '企业负责人', complete: 'true'},
             {content: '科技型企业认定', tip: '园区退税资格确认', date: '2019.3.24', executive: '易创申报 吴磊敏', complete: 'true'},
-            {content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019.5.15', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019.6.1', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '知识产权申请（未订购）', tip: '科技型项目申报的前提', date: ' 2019.6.1', executive: '易创知识产权部', complete: 'false'},
             {content: '撰写可行性分析报告（未订购）', tip: '为后续项目申报打好文件基础', date: '2019.6.1', executive: '易创项目申报部', complete: 'false'},
             {content: '研发费用补贴申请（未订购）', tip: '最高不超过支出额的5%给予补助', date: '2019.6.15', executive: '易创项目申报部', complete: 'false'},
@@ -127,22 +127,23 @@ export const SCHEDULES = [
             {content: '1季度个人所得税筹划', tip: '避免多交个税', date: '2019.3.29', executive: '易创顾问 徐蓉', complete: 'true'},
             {content: ' 2018年度汇算清缴', tip: '', date: '2019.5.5', executive: '易创顾问 徐蓉', complete: 'true'},
 
-            {content: '一般纳税人2季度税收筹划', tip: '收入为0，暂无需筹划', already: true, date: '2019.5.9', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '2季度企业所得税预估及筹划', tip: '收入为0，暂无需筹划', already: true, date: '2019.5.9', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '完成员工信息采集表填写 ', tip: '为政策享受、研发费用做准备 ', date: '2019.6.1', executive: '企业负责人', complete: 'true'},
-            {content: '出具社保补贴政策享受评估报告', tip: '符合条件，可享受2000元/人补贴', date: '2019.6.1', executive: '易创顾问 徐蓉', complete: 'false'},
-
+            {content: '一般纳税人2季度税收筹划', tip: '收入为0，暂无需筹划', already: true, date: '2019.5.9', executive: '易创顾问 徐蓉', complete: 'true'},
+            {content: '2季度企业所得税预估及筹划', tip: '收入为0，暂无需筹划', already: true, date: '2019.5.9', executive: '易创顾问 徐蓉', complete: 'true'},
             {
                 content: '业务招待费、广宣费税前扣除比例核算，进行所得税税收筹划',
                 tip: '数据分析完成，暂无需调整',
                 already: true,
                 date: '2019.5.10',
                 executive: '易创顾问 徐蓉',
-                complete: 'false'
+                complete: 'true'
             },
+
+
             {content: '注册资本认缴时间确认及提醒', tip: '确保项目申报顺利进行', date: '2019.5.25', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '核对往来款，汇报应收应付及欠款', date: '2019.5.27', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '测算企业半年度税负率是否达标', tip: '规避企业涉税风险', date: '2019.5.29', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '完成员工信息采集表填写 ', tip: '为政策享受、研发费用做准备 ', date: '2019.6.1', executive: '企业负责人', complete: 'false'},
+            {content: '出具社保补贴政策享受评估报告', tip: '符合条件，可享受2000元/人补贴', date: '2019.6.1', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '核查企业印花税、房产税、城建税等小税种缴纳情况，并作汇报', tip: '规避企业涉税风险', date: '2019.6.12', executive: '易创会计 胡静', complete: 'false'},
             {content: '预估年度所得税，修订当年税筹方案', tip: '所得税第一次预估', date: '2019.7.18', executive: '易创顾问 徐蓉', complete: 'false'},
             {content: '核对是否欠税', tip: '规避税务稽查风险', date: '2019.8.4', executive: '易创会计 胡静', complete: 'false'},
