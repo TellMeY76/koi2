@@ -9,6 +9,7 @@
                 <img [src]="consultant.headImg">
             </ion-avatar>
             <ion-card-content style="padding:1em 0" class="notice-info-card notice-color-normal">
+                <p>尊敬的马总：您好！</p>
                 <p>您的专属顾问：{{consultant.name}}</p>
                 <p>联系手机：<a>
                     <ion-icon name="call"></ion-icon>
@@ -18,42 +19,45 @@
         </ion-item>
 
         <ion-card-content class="notice-step" *ngIf="noticeInfo">
-            <div class="notice-step-block" *ngIf="noticeInfo.finished.length">
+            <div style="display: flex">
                 <p>已完成：</p>
-                <div class="notice-step-items">
+                <div style="display: flex;flex-flow: column">
                     <p *ngFor="let item of noticeInfo.finished"><span>・</span>{{item}}</p>
                 </div>
             </div>
-            <div class="notice-step-block" *ngIf="noticeInfo.Upcoming.length">
-                <p class="notice-color-waring">准备实施：</p>
-                <div class="notice-step-items">
+            <div style="display: flex">
+                <p class="notice-color-waring">正实施：</p>
+                <div style="display: flex;flex-flow: column">
                     <p *ngFor="let item of noticeInfo.Upcoming"><span>・</span>{{item}}</p>
                 </div>
             </div>
         </ion-card-content>
     </ion-card>
 
-    <!--    <ion-card mode="ios" class="notice-card">-->
-    <!--&lt;!&ndash;        <ion-card-header mode="md">&ndash;&gt;-->
-    <!--&lt;!&ndash;            <ion-card-title class="notice-card-title" mode="md">本月财务报告</ion-card-title>&ndash;&gt;-->
-    <!--&lt;!&ndash;        </ion-card-header>&ndash;&gt;-->
-    <!--        <ion-card-content mode="md" class="notice-card-content">-->
-    <!--            <p>目前还需您尽快确认：</p>-->
-    <!--            <pre class="notice-card-text">  本年收入:0     本年支出:12.88万   本年利润:<span style="color: red">-12.88万</span></pre>-->
-    <!--            <pre class="notice-card-text">  所得税:0        个所税:1030元       增值税留抵:1.57万</pre>-->
-    <!--            <pre class="notice-card-text">  R&D项目:6    研发费用:6.61万     研发收入:0</pre>-->
-    <!--            <br>-->
-    <!--        </ion-card-content>-->
-    <!--    </ion-card>-->
+    <ion-card mode="ios" class="notice-card">
+        <!--<ion-card-header mode="md">-->
+        <!--<ion-card-title class="notice-card-title" mode="md">本月财务报告</ion-card-title>-->
+        <!--</ion-card-header>-->
+        <ion-card-content mode="md" class="notice-card-content">
+            <p>【本月财务报告】</p>
+            <pre class="notice-card-text">  本年收入:0     本年支出:12.88万   本年利润:0</pre>
+            <pre class="notice-card-text">  所得税:0        个所税:1030元       增值税留抵:1.57万</pre>
+            <pre class="notice-card-text">  研发项目:6     研发费用:6.61万     研发收入:0</pre>
+            <br>
+        </ion-card-content>
+    </ion-card>
 
     <ion-card mode="ios" class="notice-card">
         <ion-card-content mode="md" class="notice-card-content">
-            <p>目前尚需您确认以下信息：</p>
-            <p class="notice-card-nextLine"> 1.为便于贵公司今年完成区工程申报，为后续顺利实施高企申报做准备，我们会配合贵公司按
-                照高企账务处理规范进行调账，鉴于贵司发展潜力巨大，发展前景良好，并与易创有良好的合作关系，我们此次将免费为贵公司进行调账。</p>
-            <p class="notice-card-nextLine">2.调账完成后，建议贵公司升级到高企服务套餐，以便后续高企申报工作顺利进行，高企
-                服务套餐原价2500元/月，我们将给予贵公司极其优惠的套餐价格（1280元/月），希望以后与贵司建立持续良好的长久合作关系。</p>
-            <p class="notice-card-nextLine">3.以上信息若无问题，请尽快确认，并安排财务、项目申报部及审计部门会面，我们会尽快完成调账工作，以便贵司顺利申报区工程项目。</p><br>
+            <p class="notice-card-nextLine"> 1.高企认定成功后注意事项：</p>
+            <p class="notice-card-nextLine"> ①请尽快至主管税务机关进行税收资格认定，以免错失税收优惠资格。</p>
+            <p class="notice-card-nextLine"> ②每年5月底前完成高新技术企业统计年报，汇报上一年度知识产权、科技人员、研发费用、经营收入等数据情况，累计两年未年报，将取消高企资格。</p>
+            <p class="notice-card-nextLine"> ③涉及公司名称变更、经营业务发生变化等情况需及时向属地科技局报告并提交申请变更。</p>
+            <p class="notice-card-nextLine">④高企有效期为3年，超过有限期需重新认定，请及时关注企业知识产权、科技人员、研发费用占比指标情况。</p>
+
+
+            <p class="notice-card-nextLine">2.社保缴费基数调整！2019年度本市社保缴费基数申报工作已经开始，申报时间：2019年5月5日-25日。
+                新缴费基数下限3539元，上限17694元。企业单位需根据参保职工本人上年度（2018年1月至12月全部工资性收入）的月平均工资水平确定2019年度月缴费基数，请在25号之前确定基数据实申报。</p><br>
         </ion-card-content>
     </ion-card>
 

@@ -8,11 +8,13 @@ export const REPO_DETAILS: RepoDetail[] = [
         status: ['公司名称：宁波汇智恒动自动化科技有限公司', '注册地址：江北区 庆丰路777弄',
             '注册资本：1580万', '行业类型：科技型；机器人与智能化设备的研发',
             '法定代表人：马赫'],
-        suggest: `易创会协助您完成年检变更、经济普查等相关企业服务，同时，我们还提供创新券网站注册备案服务。
+        suggest: `易创会协助您完成年检变更、经济普查等相关企业服务，同时，我们还提供创新券申领服务。
         创新券是由宁波市两创办发放，专用于补助小微企业购买专业服务机构所提供的服务产品。使用创新券，易创记账服务费可抵减<font color="red">5000</font>元。
         注册备案流程：
-        新用户注册——上年纳税年度营业收入证明——从业人数（缴交社保）证明——小微企业资格登记
+        新用户注册——上年纳税年度营业收入证明——从业人数（缴交社保）证明——小微企业资格登记成功——选择易创下订单——易创受理并上传电子合同——确认合同完成电子签章——订单评价—等待平台发券通知—付券（支付合同金额50%）——支付剩余50%款项——完成。
        
+        创新券平台网址： <a href="http://fwq.nbsme.org">http://fwq.nbsme.org</a>
+      
         如您需要易创帮助申请，可向我订购。
         服务费：<font color="red">¥99.00</font>元`,
         weAdvice: {
@@ -41,7 +43,9 @@ export const REPO_DETAILS: RepoDetail[] = [
                 {word: '宁波市智团创业计划', value: '最高奖励50万'},
                 {word: '研发费用后补助', value: '补贴5%'},
                 {word: '高企培育入库补贴', value: '5万元'},
-            ]
+                {word: '发明专利资助', value: '每件奖励6000元'},
+            ],
+            declare:[{title:'创新型初创企业备案',date:'05.31',link:''}]
         }
     },
     {
@@ -77,22 +81,19 @@ export const SCHEDULES = [
         title: '注册方案 & 股权架构设计',
         schedule: [
             {content: '经济普查', tip: '', date: '2019.3.31', executive: '公司负责人', complete: 'true'},
-            {content: '创新券网站注册备案', tip: '财务费用减免5000', date: '2019.5.15', executive: '易创顾问 徐蓉', complete: 'false'},
-            {content: '社保公积金年检', tip: '', date: '2019.5.31', executive: '公司负责人', complete: 'false'},
+            {content: '创新券申领服务', tip: '财务费用减免5000', date: '2019.6.1', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '社保公积金年检', tip: '', date: '2019.6.15', executive: '公司负责人', complete: 'false'},
             {content: '工商年检', tip: '', date: '2019.6.31', executive: '易创顾问 徐蓉', complete: 'false'},
         ]
     },
     {
         title: '政策匹配',
         schedule: [
-            {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.5.15', executive: '企业负责人', complete: 'false'},
+            {content: '创新型初创企业备案', tip: '申报智团项目必备', date: '2019.5.31', executive: '企业负责人', complete: 'false'},
             {content: '知识产权申请（未订购）', tip: '科技型项目申报的前提', date: ' 2019.6.1', executive: '易创知识产权部', complete: 'false'},
             {content: '撰写可行性分析报告（未订购）', tip: '为后续项目申报打好文件基础', date: '2019.6.1', executive: '易创项目申报部', complete: 'false'},
             {content: '研发费用补贴申请（未订购）', tip: '最高不超过支出额的5%给予补助', date: '2019.6.15', executive: '易创项目申报部', complete: 'false'},
             {content: '宁波市智团创业计划（未订购）', tip: '最高50万奖励', date: '2019.10.15', executive: '易创项目申报部', complete: 'false'},
-            {content: '高新创业精英计划（未订购）', tip: '补贴50万-1000万', date: '2020.1.25', executive: '易创项目申报部', complete: 'false'},
-            {content: '高新区优质型企业备案（未订购）', tip: '最高50万奖励', date: '2020.2.25', executive: '易创项目申报部', complete: 'false'},
-
         ]
     },
     {
@@ -108,13 +109,13 @@ export const SCHEDULES = [
     {
         title: '财税计划',
         schedule: [
-            {content: '完成员工信息采集表填写 ', tip: '为政策享受、研发费用做准备 ', date: '2019.4.10', executive: '企业负责人', complete: 'true'},
             {content: '高企-高企申报评估与规划服务', tip: '生成规划报告', date: '2019.4.13', executive: '易创顾问 徐蓉', complete: 'true'},
             {content: '高企-首次研发项目立项辅导服务', tip: '生成研发项目立项计划表', date: '2019.4.15', executive: '易创顾问 徐蓉', complete: 'true'},
-            {content: '出具社保补贴政策享受评估报告', tip: '符合条件，可享受2000元/人补贴', date: '2019.4.29', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '完成员工信息采集表填写 ', tip: '为政策享受、研发费用做准备 ', date: '2019.5.15', executive: '企业负责人', complete: 'false'},
+            {content: '出具社保补贴政策享受评估报告', tip: '符合条件，可享受2000元/人补贴', date: '2019.5.17', executive: '易创顾问 徐蓉', complete: 'false'},
 
 
-            {content: '高企-财务规范性辅导服务', tip: '规范报销/汇款/出入库/工资发放流程', date: '2019.5.14', executive: '易创顾问 徐蓉', complete: 'false'},
+            {content: '高企-财务规范性辅导服务', tip: '规范报销/汇款/出入库/工资发放流程', date: '2019.5.19', executive: '易创顾问 徐蓉', complete: 'false'},
 
 
             {content: '一般纳税人2季度税收筹划', tip: '避免多交增值税', date: '2019.5.20', executive: '易创顾问 徐蓉', complete: 'false'},

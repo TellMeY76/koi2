@@ -34,6 +34,16 @@
                         <span class="content-list-li-right">{{wv.value}}</span>
                     </li>
                 </ol>
+                <div *ngIf="info.weAdvice.declare" style="border-top: 1px dashed #333;
+    margin-top: 15px;">
+                    <p class="report-detail-suggest">近期申报：</p>
+                    <div *ngFor="let item of info.weAdvice.declare" style="margin-bottom: 10px">
+                        <p style="margin: 0;" class="report-detail-suggest">{{item['title']}} </p>
+                        <p style="margin: 0;" class="report-detail-suggest"><a> 查看申报通知 </a>
+                             申报截止日：{{item['date']}}
+                        </p>
+                    </div>
+                </div>
                 <p style="text-indent:2em;padding: 0;margin: 1em 0 1em 0" class="content-list"
                    *ngIf="info.weAdvice.others">{{info.weAdvice.others}}</p>
             </div>

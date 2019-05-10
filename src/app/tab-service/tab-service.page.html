@@ -10,38 +10,39 @@
             </div>
         </div>
 
-        <div class="report-detail-card">
+        <div class="report-detail-card report-detail-card-others">
             <div class="report-detail-card-title">
                 已购套餐：
             </div>
-            <div class="report-service report-detail-card-content">
-                <div class="service-view">
-                    <div class="service-container">
-                        <h3>{{bestPlan.name}}</h3>
-                        <div class="service-range">
-                            <h4>服务范围：</h4>
-                            <div class="package-service-items">
-                                <p *ngFor="let range of bestPlan.ranges">{{range}}</p>
-                            </div>
-                        </div>
-                        <div class="service-content">
-                            <h4>服务内容：</h4>
-                            <div class="package-service-items">
-                                <p *ngFor="let content of bestPlan.contents">{{content}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="package-worth">
-                        <span class="package-price-label">服务价值：</span><span
-                            class="package-price">￥{{bestPlan['worth']}}</span>
-                    </div>
-                    <div class="package-worth">
-                        <span class="package-price-label">套餐价：</span><span
-                            class="package-price">￥{{bestPlan['sell'] / 12}}
-                        /月</span>
-                    </div>
-                </div>
-            </div>
+            <h5>huizhi-step1</h5>
+<!--            <div class="report-service report-detail-card-content">-->
+<!--                <div class="service-view">-->
+<!--                    <div class="service-container">-->
+<!--                        <h3>{{bestPlan.name}}</h3>-->
+<!--                        <div class="service-range">-->
+<!--                            <h4>服务范围：</h4>-->
+<!--                            <div class="package-service-items">-->
+<!--                                <p *ngFor="let range of bestPlan.ranges">{{range}}</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="service-content">-->
+<!--                            <h4>服务内容：</h4>-->
+<!--                            <div class="package-service-items">-->
+<!--                                <p *ngFor="let content of bestPlan.contents">{{content}}</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="package-worth">-->
+<!--                        <span class="package-price-label">服务价值：</span><span-->
+<!--                            class="package-price">￥{{bestPlan['worth']}}</span>-->
+<!--                    </div>-->
+<!--                    <div class="package-worth">-->
+<!--                        <span class="package-price-label">套餐价：</span><span-->
+<!--                            class="package-price">￥{{bestPlan['sell'] / 12}}-->
+<!--                        /月</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
         <div class="report-detail-card report-detail-card-others">
             <div class="report-detail-card-title ">

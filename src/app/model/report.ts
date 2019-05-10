@@ -29,6 +29,7 @@ export class WeAdvice {
     contents?: string[];
     wordValues?: WordValues[];
     others?: string;
+    declare: any[];
 }
 
 export class RepoSchedule {
